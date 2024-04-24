@@ -15,7 +15,7 @@ export default function Benefits() {
     {
       icon: <BookCheck className="size-6" strokeWidth={1.5} />,
       title: "Được cấp VISA Hàn Quốc",
-      desc: "Nhân sự hoàn thành chương trình đào tạo và nhận offer từ công ty Hàn Quốc sẽ được Bộ Ngoại Giao Hàn Quốc cấp VISA công tác ",
+      desc: "Nhân sự hoàn thành chương trình đào tạo và nhận offer từ công ty Hàn Quốc sẽ được Bộ Ngoại Giao Hàn Quốc cấp VISA làm việc tại Hàn",
     },
     {
       icon: <MountainSnow className="size-6" strokeWidth={1.5} />,
