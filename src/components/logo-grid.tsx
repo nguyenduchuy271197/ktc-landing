@@ -8,16 +8,16 @@ import ussh from "/public/logos/USSH.svg";
 
 const logos = [
   {
-    src: iuh,
-    alt: "iuh",
-  },
-  {
     src: naver,
     alt: "naver",
   },
   {
     src: shinhan,
     alt: "shinhan",
+  },
+  {
+    src: iuh,
+    alt: "iuh",
   },
   {
     src: ussh,
@@ -36,8 +36,8 @@ const logos = [
 export default function LogoGrid() {
   return (
     <div className="container py-20">
-      <h2 className="font-semibold text-sm text-gray-800 text-center ">
-        Được các công ty lớn nhất tin cậy
+      <h2 className="font-semibold text-sm text-gray-800 text-center">
+        Đối tác của LIKELION
       </h2>
       <div className="mt-8 flex justify-center max-w-3xl mx-auto">
         <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-8 md:gap-x-16 md:grid-cols-3">
