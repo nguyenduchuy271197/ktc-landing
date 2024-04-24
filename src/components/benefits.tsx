@@ -7,6 +7,8 @@ import {
   Play,
   TrendingUp,
 } from "lucide-react";
+import Image from "next/image";
+import benefitGif from "/public/benefits.gif";
 
 export default function Benefits() {
   const features = [
@@ -46,7 +48,7 @@ export default function Benefits() {
     <section className="py-14">
       <div className="container">
         <div className=" text-gray-600 gap-16 justify-between lg:flex">
-          <div>
+          <div className="max-w-xl">
             <div className="max-w-xl space-y-3">
               <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
                 Lợi ích khi tham gia
@@ -75,9 +77,10 @@ export default function Benefits() {
             </div>
           </div>
           <div className="mt-12 lg:mt-0">
-            <img
-              src="https://raw.githubusercontent.com/sidiDev/remote-assets/main/Safari%20(Big%20Sur)%20-%20Light.png"
-              className="w-full shadow-lg rounded-lg border sticky top-10"
+            <Image
+              src={benefitGif}
+              className="shadow-lg rounded-lg border sticky top-10"
+              alt="Benefits"
             />
           </div>
         </div>
