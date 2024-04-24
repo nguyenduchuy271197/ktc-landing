@@ -101,8 +101,16 @@ export default function Hero() {
         </div>
       </GradientWrapper>
       <div className="max-w-screen-xl px-8 mx-auto">
-        <div className="mt-0">
-          <VideoPlayer />
+        <div
+          className="mt-0 border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl"
+          style={{
+            boxShadow:
+              "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
+          }}
+        >
+          <div className="overflow-hidden rounded-2xl bg-gray-100 md:p-4">
+            <VideoPlayer />
+          </div>
         </div>
       </div>
     </section>
