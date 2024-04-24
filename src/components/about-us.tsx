@@ -74,7 +74,7 @@ export default function AboutUs() {
                 idx % 2 != 1 && "lg:flex-row-reverse"
               )}
             >
-              <div className="sm:hidden lg:block lg:max-w-xl">
+              <div className="hidden lg:block lg:max-w-xl">
                 <img src={item.img} className="rounded-lg" alt="" />
               </div>
 

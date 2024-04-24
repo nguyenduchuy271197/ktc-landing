@@ -35,7 +35,7 @@ const FaqsCard = (props: FaqsCardProps) => {
         {state ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-500 ml-2"
+            className="h-5 w-5 text-gray-500 ml-2 shrink-0"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -50,7 +50,7 @@ const FaqsCard = (props: FaqsCardProps) => {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-500 ml-2"
+            className="h-5 w-5 text-gray-500 ml-2 shrink-0"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -102,20 +102,22 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8 py-20">
-      <div className="space-y-3 text-center">
-        <h2 className="text-3xl text-gray-800 font-semibold">
-          Những Câu Hỏi Thường Gặp
-        </h2>
-        <p className="text-gray-600 max-w-lg mx-auto text-lg">
-          Dưới đây là những câu hỏi phổ biến về các khóa đào tạo lập trình và
-          kết nối việc làm tại Hàn Quốc.
-        </p>
-      </div>
-      <div className="mt-14 max-w-2xl mx-auto">
-        {faqsList.map((item, idx) => (
-          <FaqsCard key={idx} idx={idx} faqsList={item} />
-        ))}
+    <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto py-20">
+      <div className="container">
+        <div className="space-y-3 text-center">
+          <h2 className="text-3xl text-gray-800 font-semibold">
+            Những Câu Hỏi Thường Gặp
+          </h2>
+          <p className="text-gray-600 max-w-lg mx-auto text-lg">
+            Dưới đây là những câu hỏi phổ biến về các khóa đào tạo lập trình và
+            kết nối việc làm tại Hàn Quốc.
+          </p>
+        </div>
+        <div className="mt-14 max-w-2xl mx-auto">
+          {faqsList.map((item, idx) => (
+            <FaqsCard key={idx} idx={idx} faqsList={item} />
+          ))}
+        </div>
       </div>
     </section>
   );
