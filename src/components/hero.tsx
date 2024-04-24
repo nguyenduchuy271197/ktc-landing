@@ -2,7 +2,7 @@ import Link from "next/link";
 import GradientWrapper from "./gradient-wrapper";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import pattern from "/public/patterns/line-pattern-5.jpg";
+import pattern from "/public/patterns/hero-line-pattern.svg";
 import VideoPlayer from "./video-player";
 
 export default function Hero() {
