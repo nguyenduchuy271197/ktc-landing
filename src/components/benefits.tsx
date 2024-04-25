@@ -8,7 +8,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import Image from "next/image";
-import benefitGif from "/public/benefits.gif";
+import benefitSrc from "/public/benefits.jpg";
 
 export default function Benefits() {
   const features = [
@@ -47,7 +47,7 @@ export default function Benefits() {
   return (
     <section className="py-14">
       <div className="container">
-        <div className=" text-gray-600 gap-16 justify-between lg:flex">
+        <div className=" text-gray-600 gap-8 grid md:grid-cols-[3fr_2fr] overflow-hidden">
           <div className="max-w-xl">
             <div className="max-w-xl space-y-3">
               <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
@@ -62,7 +62,7 @@ export default function Benefits() {
               <ul className="space-y-8">
                 {features.map((item, idx) => (
                   <li key={idx} className="flex gap-x-4">
-                    <div className="flex-none w-12 h-12 bg-indigo-50 text-indigo-600 rounded-lg flex items-center justify-center">
+                    <div className="flex-none w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center">
                       {item.icon}
                     </div>
                     <div>
@@ -76,12 +76,15 @@ export default function Benefits() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 lg:mt-0">
-            <Image
-              src={benefitGif}
-              className="shadow-lg rounded-lg border sticky top-10"
-              alt="Benefits"
-            />
+          <div>
+            <div className="relative w-full h-full shadow-2xl">
+              <Image
+                src={benefitSrc}
+                alt="Benefits"
+                className="object-cover rounded-lg"
+                fill
+              />
+            </div>
           </div>
         </div>
       </div>

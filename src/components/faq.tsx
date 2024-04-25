@@ -80,24 +80,32 @@ const FaqsCard = (props: FaqsCardProps) => {
 export default function FAQ() {
   const faqsList = [
     {
-      q: "Tôi cần trình độ lập trình nào để tham gia khóa học?",
-      a: "Đối với lớp 1 và 2, bạn cần có kinh nghiệm lập trình và đủ trình độ để có thể đi làm ngay. Lớp 3 dành cho những người mới bắt đầu trong lĩnh vực lập trình.",
+      q: "Chương trình có yêu cầu về độ tuổi và kinh nghiệm của ứng viên không ạ?",
+      a: "Dự án tiếp nhận ứng viên dưới 35 tuổi, lý lịch không có tiền án tiền sự. Đơn vị sẽ tuyển chọn dựa trên mặt bằng chung, không yêu cầu số năm kinh nghiệm cụ thể.",
     },
     {
-      q: "Học phí của các khóa học là bao nhiêu?",
-      a: "Học phí sẽ được cung cấp sau khi bạn đăng ký và tham gia buổi phỏng vấn. Học phí sẽ phụ thuộc vào khóa học bạn lựa chọn và trình độ của bạn.",
+      q: "Các khoá đào tạo có mở thêm không ạ?",
+      a: "Chương trình chỉ được tổ chức một lần trong năm 2024 thôi, vậy nên hãy quyết định nhanh chóng bạn nhé.",
     },
     {
-      q: "Sau khi hoàn thành khóa học, tôi sẽ được đảm bảo việc làm tại Hàn Quốc?",
-      a: "Chúng tôi sẽ hỗ trợ kết nối và giới thiệu việc làm tại các doanh nghiệp Hàn Quốc. Tuy nhiên, việc có được công việc hay không sẽ phụ thuộc vào năng lực của bạn và quy trình tuyển dụng của doanh nghiệp.",
+      q: "Cuối khoá học có bài test đầu ra không ạ? Tiêu chí đánh giá ra sao?",
+      a: "Sau khoá học, học viên không làm test cuối khoá mà sẽ gửi hồ sơ và tham gia phỏng vấn với các doanh nghiệp Hàn Quốc.",
     },
     {
-      q: "Khóa học có cung cấp giáo trình hoặc tài liệu hướng dẫn?",
-      a: "Đúng vậy, bạn sẽ được cung cấp giáo trình, tài liệu hướng dẫn và các tài nguyên học tập cần thiết cho khóa học.",
+      q: "Dự án thực tế trong khoá đào tạo có phải là do doanh nghiệp tuyển dụng ra đề?",
+      a: "Đúng vậy. Doanh Nghiệp là người ra đề và học viên dựa theo yêu cầu để thực hiện. Sau đó, doanh nghiệp sẽ đánh giá dựa trên bài nhóm và năng lực từng cá nhân.",
     },
     {
-      q: "Hình thức đào tạo của các khóa học là gì?",
-      a: "Lớp 1 sẽ được đào tạo theo hình thức online part-time. Lớp 2 và 3 sẽ được đào tạo toàn thời gian tại lớp học hoặc trực tuyến tùy theo tình hình thực tế.",
+      q: "Khi phỏng vấn với doanh nghiệp cần dùng Tiếng Hàn và Tiếng Anh phải không ạ?",
+      a: "Điều này còn dựa vào quy trình tuyển dụng của công ty bạn ứng tuyển, tuy nhiên sẽ có thông dịch viên Hàn-Việt hỗ trợ.",
+    },
+    {
+      q: "Khi làm việc tại Hàn có yêu cầu Tiếng Anh không?",
+      a: "Không yêu cầu, tuy nhiên có tiếng Anh cơ bản sẽ giúp bạn dễ dàng trao đổi công việc và thực hiện các sinh hoạt khác tại Hàn.",
+    },
+    {
+      q: "Chi phí học như thế nào?",
+      a: "Để tham gia chương trình học viên cần đóng phí bảo chứng, LIKELION sẽ hoàn lại học phí khi (đậu phỏng vấn/ hay chỉ cần đi học đầy đủ?)",
     },
   ];
 

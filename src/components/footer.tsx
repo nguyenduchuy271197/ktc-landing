@@ -1,3 +1,6 @@
+import Image from "next/image";
+import logo from "/public/MSS x LIKELION.svg";
+
 export default function Footer() {
   const footerNavs = [
     {
@@ -22,11 +25,13 @@ export default function Footer() {
     <footer className="text-gray-500 bg-white py-5 max-w-screen-xl mx-auto">
       <div className="container">
         <div className="max-w-lg sm:mx-auto sm:text-center">
-          <img
-            src="https://www.floatui.com/logo.svg"
-            className="w-32 sm:mx-auto"
+          <Image
+            src={logo}
+            alt="LIKELION"
+            className=" sm:mx-auto"
+            height={36}
           />
-          <p className="leading-relaxed mt-2 text-[15px]">
+          <p className="leading-relaxed mt-4 text-[15px]">
             Lorem Ipsum has been the industrys standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book.

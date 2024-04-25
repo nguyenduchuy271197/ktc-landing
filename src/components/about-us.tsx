@@ -96,7 +96,7 @@ export default function AboutUs() {
   return (
     <section className="py-14">
       <div className="container">
-        <div className="space-y-12">
+        <div className="space-y-12 border-t-2 border-b-2 py-20">
           {text.map((item, idx) => (
             <div
               key={idx}
@@ -111,7 +111,7 @@ export default function AboutUs() {
 
               <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">
                 <div className="max-w-2xl">
-                  <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl mb-4">
+                  <h3 className="text-gray-800 text-2xl font-semibold sm:text-3xl mb-4">
                     {item.title}
                   </h3>
 

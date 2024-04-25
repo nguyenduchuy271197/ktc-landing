@@ -5,10 +5,9 @@ export default function Contact() {
     <section className="relative py-28 bg-gray-900">
       <div className="relative z-10 max-w-screen-xl mx-auto text-gray-600 sm:px-4 md:px-8">
         <div className="max-w-lg space-y-3 px-8 mx-auto text-center sm:px-0">
-          <h2 className="text-cyan-400 font-semibold">Contact</h2>
-          <p className="text-white text-3xl font-semibold sm:text-4xl">
+          <h2 className="text-white text-3xl font-semibold sm:text-4xl">
             Form Đăng ký
-          </p>
+          </h2>
           <p className="text-gray-300">
             Đăng ký ngay trước khi mọi chuyện tồi tệ hơn!
           </p>

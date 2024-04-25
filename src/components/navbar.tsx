@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import logo from "/public/logo.png";
 
 export default function Navbar() {
   const [state, setState] = useState(false);
@@ -17,14 +18,9 @@ export default function Navbar() {
   return (
     <nav className="bg-white border-b w-full md:static md:text-sm md:border-none">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
-        <div className="flex items-center justify-between py-3 md:py-5 md:block">
+        <div className="flex items-center justify-between py-3 md:py-6 md:block">
           <Link href="#">
-            <Image
-              src="https://www.floatui.com/logo.svg"
-              width={120}
-              height={50}
-              alt="Float UI logo"
-            />
+            <Image src={logo} alt="LIKELION" height={18} />
           </Link>
           <div className="md:hidden">
             <button
