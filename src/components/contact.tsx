@@ -1,30 +1,62 @@
-import ContactForm from "./forms/contact-form";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import GoogleMap from "./shared/google-map";
 
 export default function Contact() {
+  const contactMethods = [
+    {
+      icon: <Phone className="size-6" />,
+      contact: "(+84) 86 713 3779",
+      title: "Phone",
+    },
+    {
+      icon: <Mail className="size-6" />,
+      contact: "likelion.vn@likelion.net",
+      title: "Email",
+    },
+    {
+      icon: <Clock className="size-6" />,
+      contact: "Thứ 2 - Thứ 6 | 8:30 AM - 5:30 PM",
+      title: "Time",
+    },
+    {
+      icon: <MapPin className="size-6" />,
+      contact:
+        "Cobi Tower 2, 2-4 Đường số 8, Tân Phú, Quận 7, Thành phố Hồ Chí Minh",
+      title: "Our office",
+    },
+  ];
+
   return (
-    <section className="relative py-28 bg-gray-900">
-      <div className="relative z-10 max-w-screen-xl mx-auto text-gray-600 sm:px-4 md:px-8">
-        <div className="max-w-lg space-y-3 px-8 mx-auto text-center sm:px-0">
-          <h2 className="text-white text-3xl font-semibold sm:text-4xl">
-            Form Đăng ký
+    <section className="py-14">
+      <div className="container text-gray-600 ">
+        <div className="max-w-xl space-y-3">
+          <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+            Liên hệ
           </h2>
-          <p className="text-gray-300">
-            Đăng ký ngay trước khi mọi chuyện tồi tệ hơn!
+          <p>
+            We’re here to help and answer any question you might have, We look
+            forward to hearing from you .
           </p>
         </div>
-        <div className="px-8">
-          <div className="mt-12 mx-auto p-6 bg-white sm:max-w-lg sm:p-8 rounded-lg">
-            <ContactForm />
-          </div>
+        <div>
+          <ul className="mt-8 flex flex-col flex-wrap gap-y-4 lg:gap-x-24">
+            {contactMethods.map((item, idx) => (
+              <li key={idx}>
+                <h4 className="sr-only text-gray-800 text-lg font-medium">
+                  {item.title}
+                </h4>
+                <div className="mt-3 flex items-center gap-x-3">
+                  <div className="flex-none text-gray-400">{item.icon}</div>
+                  <p>{item.contact}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <GoogleMap />
         </div>
       </div>
-      <div
-        className="absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]"
-        style={{
-          background:
-            "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
-        }}
-      ></div>
     </section>
   );
 }

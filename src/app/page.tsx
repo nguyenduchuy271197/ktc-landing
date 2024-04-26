@@ -17,10 +17,9 @@ export default function Page() {
       <Benefits />
       <AboutUs />
       <ImageGallery />
-      <Reviews />
-      <Contact />
       <FAQ />
       <CTA />
+      <Contact />
     </div>
   );
 }
