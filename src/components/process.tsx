@@ -1,46 +1,51 @@
 const steps = [
   {
-    time: new Date(),
-    title: "Xét duyệt hồ sơ",
-    description: "Ứng viên gửi Hồ sơ ứng tuyển về LIKELION trước hạn",
-  },
-  {
-    time: new Date(),
-    title: "Bài kiểm tra năng lực",
+    time: "22/04/2024 - 03/05/2024",
+    title: "Ứng tuyển",
     description:
-      "Ứng viên tham gia làm bài kiểm tra kiến thức và năng lực chuyên môn",
+      "Ứng viên gửi Hồ sơ ứng tuyển về LIKELION trước hạn chót đăng ký",
   },
   {
-    time: new Date(),
+    time: "07/05/2024 - 10/05/2024",
+    title: "Xét duyệt hồ sơ",
+    description: "Bộ phận thẩm định tiến hành chọn lọc các ứng viên phù hợp",
+  },
+  {
+    time: "13/05/2024 - 17/05/2024",
+    title: "Kiểm tra năng lực SW",
+    description: "Ứng viên làm bài kiểm tra kiến thức và năng lực chuyên môn",
+  },
+  {
+    time: "20/05/2024 - 24/05/2024",
     title: "Phỏng vấn đầu vào",
     description:
-      "Ứng viên trình bày động lực và thuyết phục Đơn vị đào tạo để nhận học bổng 100%",
+      "Ứng viên trình bày động lực và thuyết phục Ủy ban phỏng vấn bao gồm: quản lý của doanh nghiệp, lập trình viên chuyên nghiệp và chuyên viên đào tạo.",
   },
   {
-    time: new Date(),
-    title: "Xếp lớp",
+    time: "31/05/2024",
+    title: "Kết quả tuyển chọn",
     description:
       "Sau khi vượt qua 3 vòng đánh giá, ứng viên sẽ được xếp vào cấp lớp phù hợp",
   },
   {
-    time: new Date(),
+    time: "06/2024 - 11/2024",
     title: "Đào tạo",
     description: "Ứng viên trải qua 1-5 tháng đào tạo tuỳ vào cấp lớp",
   },
   {
-    time: new Date(),
+    time: "12/2024",
     title: "Phỏng vấn đầu ra",
     description:
       "Ứng viên trao đổi và thuyết phục Nhà tuyển dụng để lấy offer vị trí mình mong muốn",
   },
   {
-    time: new Date(),
+    time: "2025",
     title: "Cấp VISA đi Hàn",
     description:
       "Sau khi có kết quả đậu phỏng vấn, các ứng viên sẽ được cấp VISA làm việc tại Hàn",
   },
   {
-    time: new Date(),
+    time: "2025",
     title: "Học hỏi và trải nghiệm",
     description:
       "Ứng viên sẽ được học hỏi và tích luỹ kinh nghiệm thực tế khi làm tại các Start-up Hàn",
@@ -50,7 +55,7 @@ const steps = [
 export default function Process() {
   return (
     <div className="container">
-      <div className="grid grid-cols-[2fr_3fr] gap-8 py-20">
+      <div className="grid md:grid-cols-[2fr_3fr] gap-8 py-20">
         <div>
           <div className="max-w-md space-y-3 sticky top-10">
             <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
@@ -65,13 +70,10 @@ export default function Process() {
 
         <div className="-my-6">
           {steps.map((step, idx) => (
-            <div key={idx} className="relative pl-8 sm:pl-32 py-6 group">
-              <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-orange-400 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
-                <time className="sm:absolute -left-2 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-24 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
-                  {step.time.toLocaleDateString("vi-VN", {
-                    month: "long",
-                    day: "numeric",
-                  })}
+            <div key={idx} className="relative pl-8 py-6 group">
+              <div className="flex flex-col items-start mb-1 group-last:before:hidden before:absolute before:left-2 before:h-full before:px-px before:bg-slate-300 before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 after:w-2 after:h-2 after:bg-orange-400 after:border-4 after:box-content after:border-slate-50 after:rounded-full after:-translate-x-1/2 after:translate-y-1.5">
+                <time className="-left-2 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase px-2 h-6 mb-3 text-emerald-600 bg-emerald-100 rounded-full">
+                  {step.time}
                 </time>
                 <div className="text-xl font-bold text-slate-900">
                   {step.title}

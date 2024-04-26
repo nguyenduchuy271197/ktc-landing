@@ -28,33 +28,37 @@ export default function Contact() {
 
   return (
     <section className="py-14">
-      <div className="container text-gray-600 ">
-        <div className="max-w-xl space-y-3">
-          <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-            Liên hệ
-          </h2>
-          <p>
-            We’re here to help and answer any question you might have, We look
-            forward to hearing from you .
-          </p>
-        </div>
-        <div>
-          <ul className="mt-8 flex flex-col flex-wrap gap-y-4 lg:gap-x-24">
-            {contactMethods.map((item, idx) => (
-              <li key={idx}>
-                <h4 className="sr-only text-gray-800 text-lg font-medium">
-                  {item.title}
-                </h4>
-                <div className="mt-3 flex items-center gap-x-3">
-                  <div className="flex-none text-gray-400">{item.icon}</div>
-                  <p>{item.contact}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <GoogleMap />
+      <div className="container text-gray-600">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
+            <div className="max-w-xl space-y-3">
+              <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                Liên hệ
+              </h2>
+              <p>
+                We’re here to help and answer any question you might have, We
+                look forward to hearing from you .
+              </p>
+            </div>
+            <div>
+              <ul className="mt-8 flex flex-col flex-wrap gap-y-4 lg:gap-x-24">
+                {contactMethods.map((item, idx) => (
+                  <li key={idx}>
+                    <h4 className="sr-only text-gray-800 text-lg font-medium">
+                      {item.title}
+                    </h4>
+                    <div className="mt-3 flex items-center gap-x-3">
+                      <div className="flex-none text-gray-400">{item.icon}</div>
+                      <p>{item.contact}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="w-full">
+            <GoogleMap />
+          </div>
         </div>
       </div>
     </section>
