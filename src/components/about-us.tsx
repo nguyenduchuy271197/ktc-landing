@@ -69,25 +69,6 @@ const text = [
     img: about1,
   },
   {
-    title: "Mục tiêu của dự án K-Tech College 2024",
-    description: (
-      <div>
-        <p>
-          Đào tạo kỹ năng thực chiến cho nhân lực Software Việt Nam có triển
-          vọng và kết nối việc làm cho họ tới các công ty tại Hàn Quốc, nhằm góp
-          phần giảm bớt tình trạng thiếu nhân lực cho các Start-up Hàn Quốc.
-        </p>
-        <p>
-          Mang đến cơ hội việc làm, thúc đẩy phát triển tài năng cho các nhân
-          lực ngành CNTT chất lượng cao ở Việt Nam với nguồn tài trợ 100% học
-          phí từ Chính phủ Hàn Quốc.
-        </p>
-      </div>
-    ),
-
-    img: about2,
-  },
-  {
     title: "Cơ quan tài trợ - MSS",
     description: (
       <div>
@@ -110,6 +91,25 @@ const text = [
     ),
 
     img: about3,
+  },
+  {
+    title: "Mục tiêu của dự án K-Tech College 2024",
+    description: (
+      <div>
+        <p>
+          Đào tạo kỹ năng thực chiến cho nhân lực Software Việt Nam có triển
+          vọng và kết nối việc làm cho họ tới các công ty tại Hàn Quốc, nhằm góp
+          phần giảm bớt tình trạng thiếu nhân lực cho các Start-up Hàn Quốc.
+        </p>
+        <p>
+          Mang đến cơ hội việc làm, thúc đẩy phát triển tài năng cho các nhân
+          lực ngành CNTT chất lượng cao ở Việt Nam với nguồn tài trợ 100% học
+          phí từ Chính phủ Hàn Quốc.
+        </p>
+      </div>
+    ),
+
+    img: about2,
   },
 ];
 
