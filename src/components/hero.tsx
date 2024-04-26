@@ -27,7 +27,7 @@ export default function Hero() {
           <h1 className="mx-auto text-2xl sm:text-4xl font-bold text-gray-800 lg:text-5xl">
             TUYỂN SINH DỰ ÁN KẾT NỐI VIỆC LÀM
             <span
-              className="bg-clip-text text-transparent bg-gradient-to-r from-[#9867F0] to-[#ED4E50] block mt-2"
+              className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 block mt-2"
               style={{
                 WebkitBackgroundClip: "text",
               }}
