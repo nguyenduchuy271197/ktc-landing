@@ -9,13 +9,14 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import benefitSrc from "/public/benefits.jpg";
+import Link from "next/link";
 
 export default function Benefits() {
   const features = [
     {
       icon: <BookCheck className="size-6" strokeWidth={1.5} />,
       title: "Được cấp VISA Hàn Quốc",
-      desc: "Nhân sự hoàn thành chương trình đào tạo và nhận offer từ công ty Hàn Quốc sẽ được Bộ Ngoại Giao Hàn Quốc cấp VISA làm việc tại Hàn",
+      desc: "Nhân sự hoàn thành chương trình đào tạo và nhận offer từ công ty Hàn Quốc sẽ được Bộ Ngoại Giao Hàn Quốc cấp VISA làm việc tại Hàn Quốc",
     },
     {
       icon: <MountainSnow className="size-6" strokeWidth={1.5} />,
@@ -29,13 +30,26 @@ export default function Benefits() {
     },
     {
       icon: <BriefcaseBusiness className="size-6" strokeWidth={1.5} />,
-      title: "Công tác ngắn hạn tại Hàn",
+      title: "Làm việc tại Hàn Quốc",
       desc: "Đây là cơ hội để các bạn học hỏi kinh nghiệm từ đất nước dẫn đầu về công nghệ và CNTT",
     },
     {
       icon: <CircleDollarSign className="size-6" strokeWidth={1.5} />,
       title: "Tăng thu nhập cá nhân",
-      desc: "Mức lương trung bình mỗi  tháng cho nhân sự ngành IT tại Hàn là từ 3,453,150 KRW - 8,371,053 KRW ",
+      desc: (
+        <div>
+          <p>
+            Mức lương trung bình mỗi tháng cho nhân sự ngành IT tại Hàn là từ
+            2,506 USD - 6,075 USD xem thêm thông tin{" "}
+            <Link
+              href="https://www.paylab.com/kr/salaryinfo/information-technology"
+              className="underline"
+            >
+              tại đây
+            </Link>
+          </p>
+        </div>
+      ),
     },
     {
       icon: <Handshake className="size-6" strokeWidth={1.5} />,
@@ -51,11 +65,13 @@ export default function Benefits() {
           <div className="max-w-xl">
             <div className="max-w-xl space-y-3">
               <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                Lợi ích khi tham gia
+                LỢI ÍCH KHI THAM GIA DỰ ÁN
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                congue, nisl eget molestie varius, enim ex faucibus purus
+                Dự án K-Tech College được Bộ Doanh nghiệp vừa và nhỏ và Khởi
+                nghiệp Hàn Quốc (MSS) tài trợ với mục đích đào tạo và kết nối
+                nhân lực IT tài năng của Việt Nam đến làm việc cho các Start-up
+                tại Hàn Quốc. Các lợi ích khi đăng ký tham gia dự án bao gồm:
               </p>
             </div>
             <div className="mt-12 max-w-lg lg:max-w-none">

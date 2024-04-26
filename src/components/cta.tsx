@@ -17,12 +17,11 @@ export default function CTA() {
           <div className="relative max-w-2xl mx-auto text-center">
             <div className="py-4">
               <h3 className="text-3xl font-semibold text-gray-200 md:text-4xl">
-                Cơ hội để bắt đầu học ngay hôm nay
+                Cơ hội làm việc tại Hàn Quốc ngay trong tầm tay bạn
               </h3>
               <p className="mt-4 leading-relaxed text-gray-300">
-                Nam erat risus, sodales sit amet lobortis ut, finibus eget
-                metus. Cras aliquam ante ut tortor posuere feugiat. Duis sodales
-                nisi id porta lacinia.
+                Tham gia ngay dự án K-Tech College cùng MSS và LIKELION để cơ cơ
+                hội đến và làm việc tại Hàn Quốc với chi phí 0 đồng.
               </p>
             </div>
             <div className="items-center justify-center gap-3 mt-4 sm:flex">

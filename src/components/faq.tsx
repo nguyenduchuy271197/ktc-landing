@@ -1,10 +1,10 @@
 "use client";
-import { useRef, useState } from "react";
+import { ReactNode, useRef, useState } from "react";
 
 interface FaqsCardProps {
   faqsList: {
     q: string;
-    a: string;
+    a: ReactNode;
   };
   idx: number;
 }
@@ -25,12 +25,11 @@ const FaqsCard = (props: FaqsCardProps) => {
   };
 
   return (
-    <div
-      className="space-y-3 mt-5 overflow-hidden border-b"
-      key={idx}
-      onClick={handleOpenAnswer}
-    >
-      <h4 className="cursor-pointer pb-5 flex items-center justify-between text-lg text-gray-700 font-medium">
+    <div className="space-y-3 mt-5 overflow-hidden border-b" key={idx}>
+      <h4
+        className="cursor-pointer pb-5 flex items-center justify-between text-lg text-gray-700 font-medium"
+        onClick={handleOpenAnswer}
+      >
         {faqsList.q}
         {state ? (
           <svg
@@ -69,9 +68,7 @@ const FaqsCard = (props: FaqsCardProps) => {
         className="duration-300"
         style={state ? { height: answerH } : { height: "0px" }}
       >
-        <div>
-          <p className="text-gray-500">{faqsList.a}</p>
-        </div>
+        <div className="text-gray-500">{faqsList.a}</div>
       </div>
     </div>
   );
@@ -81,7 +78,18 @@ export default function FAQ() {
   const faqsList = [
     {
       q: "Chương trình có yêu cầu về độ tuổi và kinh nghiệm của ứng viên không ạ?",
-      a: "Dự án tiếp nhận ứng viên dưới 35 tuổi, lý lịch không có tiền án tiền sự. Đơn vị sẽ tuyển chọn dựa trên mặt bằng chung, không yêu cầu số năm kinh nghiệm cụ thể.",
+      a: (
+        <div>
+          <p>
+            Dự án tiếp nhận ứng viên dưới 35 tuổi, lý lịch rõ ràng, không có
+            tiền án tiền sự.
+          </p>
+          <p>
+            Quá trình xét tuyển bao gồm thẩm định hồ sơ, kiểm tra đầu vào và
+            phỏng vấn chuyên sâu, không yêu cầu số năm kinh nghiệm cụ thể.
+          </p>
+        </div>
+      ),
     },
     {
       q: "Các khoá đào tạo có mở thêm không ạ?",
@@ -89,7 +97,7 @@ export default function FAQ() {
     },
     {
       q: "Cuối khoá học có bài test đầu ra không ạ? Tiêu chí đánh giá ra sao?",
-      a: "Sau khoá học, học viên không làm test cuối khoá mà sẽ gửi hồ sơ và tham gia phỏng vấn với các doanh nghiệp Hàn Quốc.",
+      a: "Kết thúc khóa học, học viên sẽ tham gia phát triển dự án theo yêu cầu đề bài từu chính các doanh nghiệp. Đồng thời sẽ được kết nối tham gia phỏng vấn trực tiếp với các doanh nghiệp có như cầu tuyển dụng nhân lực.",
     },
     {
       q: "Dự án thực tế trong khoá đào tạo có phải là do doanh nghiệp tuyển dụng ra đề?",
@@ -105,7 +113,32 @@ export default function FAQ() {
     },
     {
       q: "Chi phí học như thế nào?",
-      a: "Để tham gia chương trình học viên cần đóng phí bảo chứng, LIKELION sẽ hoàn lại học phí khi (đậu phỏng vấn/ hay chỉ cần đi học đầy đủ?)",
+      a: (
+        <div>
+          <p>
+            Học phí cho toàn bộ quá trình đào tạo và kết nối việc làm là 0 đồng.
+          </p>
+          <p>
+            Tuy nhiên để đảm bảo học viên nghiêm túc tham gia và hoàn thành lộ
+            trình dự án, chúng tôi sẽ yêu cầu học viên đóng phí bảo chứng
+            (5,000,000 đồng/người).
+          </p>
+          <p>Phí bảo chứng sẽ được hoàn lại cho học viên khi:</p>
+          <ul className="list-disc pl-4">
+            <li className="">Đảm bảo tham gia trên 90% các buổi học.</li>
+            <li>
+              Tham gia đầy đủ các sự kiện trong suốt quá trình học: Ideathon,
+              Kiểm tra giữa kỳ, Hackathon và hoàn thành dự án cuối khóa.
+            </li>
+            <li>
+              Tham gia đầy đủ các chương trình đào tạo bổ trợ: đào tạo tiếng Hàn
+              cơ bản, Hướng dẫn chuẩn bị hồ sơ phỏng vấn, Bài giảng về văn hóa
+              tại Doanh nghiệp Hàn Quốc, Bài giảng về kiến thức business cập
+              nhật hiện nay.
+            </li>
+          </ul>
+        </div>
+      ),
     },
   ];
 
@@ -114,7 +147,7 @@ export default function FAQ() {
       <div className="container">
         <div className="space-y-3 text-center">
           <h2 className="text-3xl text-gray-800 font-semibold">
-            Những Câu Hỏi Thường Gặp
+            Các câu hỏi thường gặp về dự án K-Tech College 2024
           </h2>
           <p className="text-gray-600 max-w-lg mx-auto text-lg">
             Dưới đây là những câu hỏi phổ biến về các khóa đào tạo lập trình và
