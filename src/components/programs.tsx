@@ -141,13 +141,6 @@ export default function Programs() {
               </Link>
             </Button>
           </div>
-          <div className="mt-8 flex justify-center">
-            <Button size="lg" variant="secondary" asChild>
-              <Link href={site.informationUrl} target="_blank">
-                Xem chi tiết
-              </Link>
-            </Button>
-          </div>
         </div>
       </div>
     </section>
