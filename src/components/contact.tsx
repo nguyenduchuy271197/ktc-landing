@@ -35,10 +35,10 @@ export default function Contact() {
               <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
                 Liên hệ
               </h2>
-              <p>
+              {/* <p>
                 We’re here to help and answer any question you might have, We
                 look forward to hearing from you .
-              </p>
+              </p> */}
             </div>
             <div>
               <ul className="mt-8 flex flex-col flex-wrap gap-y-4 lg:gap-x-24">

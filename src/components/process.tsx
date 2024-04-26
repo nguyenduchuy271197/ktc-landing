@@ -61,10 +61,10 @@ export default function Process() {
             <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
               Quy trình xét tuyển
             </h2>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               congue, nisl eget molestie varius, enim ex faucibus purus
-            </p>
+            </p> */}
           </div>
         </div>
 
