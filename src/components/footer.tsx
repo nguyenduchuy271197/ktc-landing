@@ -37,7 +37,7 @@ export default function Footer() {
             scrambled it to make a type specimen book.
           </p>
         </div>
-        <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
+        {/* <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
           {footerNavs.map((item, idx) => (
             <li key={idx} className=" hover:text-gray-800">
               <a key={idx} href={item.href}>
@@ -45,7 +45,7 @@ export default function Footer() {
               </a>
             </li>
           ))}
-        </ul>
+        </ul> */}
         <div className="mt-8 items-center justify-between sm:flex border-t pt-4">
           <div className="mt-4 sm:mt-0">
             &copy; 2024 LIKELION All rights reserved.

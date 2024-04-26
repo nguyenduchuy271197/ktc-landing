@@ -16,7 +16,7 @@ export default function Page() {
   return (
     <div>
       <Hero />
-      <LogoGrid />
+      {/* <LogoGrid /> */}
       <Benefits />
       <AboutUs />
       <Process />

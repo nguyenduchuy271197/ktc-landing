@@ -3,20 +3,20 @@ import Link from "next/link";
 
 const stats = [
   {
-    data: "35K",
-    title: "Customers",
+    data: "24,000+",
+    title: "Học viên",
   },
   {
-    data: "10K+",
-    title: "Downloads",
+    data: "10",
+    title: "Năm kinh nghiệm giáo dục",
   },
   {
-    data: "40+",
-    title: "Countries",
+    data: "6",
+    title: "Quốc gia",
   },
   {
-    data: "30M+",
-    title: "Total revenue",
+    data: "95%",
+    title: "Học viên hài lòng",
   },
 ];
 
@@ -34,10 +34,9 @@ const text = [
             >
               LIKELION
             </Link>{" "}
-            là công ty đào tạo lập trình hàng đầu tại Hàn Quốc thành lập từ 2018
-            với các khoá học đào tạo lập trình cho hơn 24.000 sinh viên đến từ
-            06 quốc gia khác nhau như Hàn Quốc, Mỹ, Úc, Hong Kong, Nhật Bản, và
-            Việt Nam.
+            là công ty đào tạo lập trình hàng đầu tại Hàn Quốc với hơn 10 năm
+            kinh nghiệm đào tạo cho hơn 24,000 sinh viên tại hơn 06 quốc gia
+            khác nhau như Hàn Quốc, Mỹ, Úc, Hong Kong, Nhật Bản, và Việt Nam.
           </p>
 
           <p>
@@ -66,24 +65,18 @@ const text = [
     img: "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   },
   {
-    title: "Mục tiêu của dự án K-TECH College 2024",
+    title: "Mục tiêu của dự án K-Tech College 2024",
     description: (
       <div>
         <p>
-          <b>
-            Dự án được tài trợ 100% bởi Bộ Doanh nghiệp vừa và nhỏ và khởi
-            nghiệp Hàn Quốc (MSS).
-          </b>
+          Đào tạo kỹ năng thực chiến cho nhân lực SW Việt Nam có triển vọng và
+          kết nối việc làm cho họ tới các công ty tại Hàn Quốc, nhằm góp phần
+          giảm bớt tình trạng thiếu nhân lực cho các Start-up Hàn Quốc.
         </p>
         <p>
-          Mục tiêu: Đào tạo nghiệp vụ và kỹ năng thực chiến cho nguồn nhân lực
-          CNTT có triển vọng ở nước ngoài, sau đó kết nối làm việc tại các công
-          ty ở Hàn Quốc, nhằm góp phần giảm bớt tình trạng thiếu nhân lực ở các
-          công ty Start-up Hàn Quốc.
-        </p>
-        <p>
-          Đây là cơ hội cho những nhân lực ngành CNTT chất lượng cao ở Việt Nam,
-          mong muốn được làm việc ở các Công ty tại Hàn Quốc với chi phí 0đ.
+          Mang đến cơ hội việc làm, thúc đẩy phát triển năng lực cho các nhân
+          lực ngành CNTT chất lượng cao ở Việt Nam với nguồn tài trợ 10% học phí
+          từ Chính phủ Hàn Quốc.
         </p>
       </div>
     ),
