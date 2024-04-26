@@ -9,10 +9,7 @@ import {
 } from "./ui/table";
 import { Button } from "./ui/button";
 import Link from "next/link";
-<<<<<<< HEAD
-=======
 import { site } from "@/config/site";
->>>>>>> 3bd8394d2531be967572ac1ca05a35304f0989ac
 
 export default function Programs() {
   const tableContent = [
@@ -127,28 +124,10 @@ export default function Programs() {
             </Table>
           </div>
 
-<<<<<<< HEAD
-          <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4 mt-8">
-            <Button size="lg" className="w-full md:w-auto" asChild>
-              <Link href="#">Đăng ký ngay</Link>
-            </Button>
-            <Button
-              variant="secondary"
-              size="lg"
-              className="w-full md:w-auto"
-              asChild
-            >
-              <Link
-                href="https://drive.google.com/file/d/1eO5PFuWJca82jIObvuiJHIjahTkDXoy-/view"
-                target="_blank"
-              >
-                Tải Brochure Dự án
-=======
           <div className="mt-8 flex justify-center">
             <Button size="lg" variant="secondary" asChild>
               <Link href={site.informationUrl} target="_blank">
-                Xem chi tiết
->>>>>>> 3bd8394d2531be967572ac1ca05a35304f0989ac
+                Tải Brochure Dự án
               </Link>
             </Button>
           </div>
