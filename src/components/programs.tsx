@@ -124,8 +124,18 @@ export default function Programs() {
             </Table>
           </div>
 
-          <div className="mt-8 flex justify-center">
-            <Button size="lg" variant="secondary" asChild>
+          <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4">
+            <Button size="lg" className="w-full md:w-auto" asChild>
+              <Link href={site.registrationUrl} target="_blank">
+                Đăng ký ngay
+              </Link>
+            </Button>
+            <Button
+              variant="secondary"
+              size="lg"
+              className="w-full md:w-auto"
+              asChild
+            >
               <Link href={site.informationUrl} target="_blank">
                 Tải Brochure Dự án
               </Link>
