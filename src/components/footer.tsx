@@ -5,27 +5,9 @@ import instagram from "/public/socials/instagram.svg";
 import tiktok from "/public/socials/tiktok.svg";
 import youtube from "/public/socials/youtube.svg";
 import Link from "next/link";
+import { site } from "@/config/site";
 
 export default function Footer() {
-  const footerNavs = [
-    {
-      href: "#",
-      name: "Về chúng tôi",
-    },
-    {
-      href: "#",
-      name: "Khoá học",
-    },
-    {
-      href: "#",
-      name: "Review",
-    },
-    {
-      href: "#",
-      name: "FAQs",
-    },
-  ];
-
   const socials = [
     {
       label: "LIKELION Facebook",
@@ -65,11 +47,11 @@ export default function Footer() {
           </p>
         </div>
         <ul className="items-center justify-center mt-12 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
-          {footerNavs.map((item, idx) => (
+          {site.routes.map((item, idx) => (
             <li key={idx} className=" hover:text-gray-800">
-              <a key={idx} href={item.href}>
-                {item.name}
-              </a>
+              <Link key={idx} href={item.path}>
+                {item.title}
+              </Link>
             </li>
           ))}
         </ul>

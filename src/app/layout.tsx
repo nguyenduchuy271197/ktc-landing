@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   category: "education",
   referrer: "origin-when-cross-origin",
   other: {
-    googleSiteVerification: "To9bBudd-R7vTgpZ5KCCm4DUwwuMpfI44qhAU2EwfqE",
+    "google-site-verification": "To9bBudd-R7vTgpZ5KCCm4DUwwuMpfI44qhAU2EwfqE",
   },
 };
 
