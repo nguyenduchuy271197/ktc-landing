@@ -94,8 +94,8 @@ export default function Programs() {
               Chương trình đào tạo
             </h2>
             <p className="text-gray-600 max-w-lg mx-auto text-lg">
-              Dưới đây là những câu hỏi phổ biến về các khóa đào tạo lập trình
-              và kết nối việc làm tại Hàn Quốc.
+              Chương trình đào tạo có thể sẽ thay đổi tùy theo năng lực chuyên
+              ngành software thực tế của các ứng viên được chọn.
             </p>
           </div>
 

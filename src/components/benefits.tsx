@@ -40,7 +40,7 @@ export default function Benefits() {
         <div>
           <p>
             Mức lương trung bình mỗi tháng cho nhân sự ngành IT tại Hàn là từ
-            2,506 USD - 6,075 USD xem thêm thông tin{" "}
+            2,506 USD - 6,075 USD. Xem thêm thông tin{" "}
             <Link
               href="https://www.paylab.com/kr/salaryinfo/information-technology"
               className="underline"

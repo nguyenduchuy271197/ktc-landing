@@ -74,7 +74,7 @@ const text = [
           giảm bớt tình trạng thiếu nhân lực cho các Start-up Hàn Quốc.
         </p>
         <p>
-          Mang đến cơ hội việc làm, thúc đẩy phát triển năng lực cho các nhân
+          Mang đến cơ hội việc làm, thúc đẩy phát triển tài năng cho các nhân
           lực ngành CNTT chất lượng cao ở Việt Nam với nguồn tài trợ 10% học phí
           từ Chính phủ Hàn Quốc.
         </p>
