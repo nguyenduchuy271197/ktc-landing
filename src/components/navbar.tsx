@@ -5,16 +5,11 @@ import Link from "next/link";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import logo from "/public/logo.png";
+import { site } from "@/config/site";
 
 export default function Navbar() {
   const [state, setState] = useState(false);
 
-  const navigation = [
-    { title: "Về chúng tôi", path: "#" },
-    { title: "Khoá học", path: "#" },
-    { title: "Review", path: "#" },
-    { title: "FAQs", path: "#" },
-  ];
   return (
     <nav className="bg-white border-b w-full md:static md:text-sm md:border-none">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
@@ -65,7 +60,7 @@ export default function Navbar() {
           }`}
         >
           <ul className="justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-            {navigation.map((item, idx) => {
+            {site.routes.map((item, idx) => {
               return (
                 <li key={idx} className="text-gray-700 hover:text-indigo-600">
                   <Link href={item.path} className="block">
