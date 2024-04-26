@@ -83,6 +83,30 @@ const text = [
 
     img: "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   },
+  {
+    title: "MSS",
+    description: (
+      <div>
+        <p>
+          Bộ Doanh nghiệp vừa và nhỏ và Khởi nghiệp Hàn Quốc (MSS - The Ministry
+          of SMEs and Startups) là một tổ chức chính phủ có mục tiêu là tăng
+          cường khả năng cạnh tranh và hỗ trợ đổi mới của các Doanh nghiệp vừa
+          và nhỏ (SME) và Doanh nghiệp siêu nhỏ (ME).
+        </p>
+        <p>
+          Sứ mệnh của MSS là phát triển và thực hiện các chính sách của chính
+          phủ trong ba lĩnh vực sau:
+        </p>
+        <ul className="list-decimal pl-5">
+          <li>Thúc đẩy tăng trưởng kinh doanh</li>
+          <li>Khuyến khích khởi nghiệp kinh doanh</li>
+          <li>Hỗ trợ doanh nghiệp siêu nhỏ</li>
+        </ul>
+      </div>
+    ),
+
+    img: "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+  },
 ];
 
 export default function AboutUs() {
