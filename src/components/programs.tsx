@@ -98,13 +98,13 @@ export default function Programs() {
                 <TableRow>
                   <TableHead className="w-28"></TableHead>
                   <TableHead className="text-center text-white w-80">
-                    Level 1 (Advanced)
+                    Lớp Cao Cấp
                   </TableHead>
                   <TableHead className="text-center text-white w-80">
-                    Level 2 (Intermediate)
+                    Lớp Trung Cấp
                   </TableHead>
                   <TableHead className="text-center text-white w-80">
-                    Level 3 (Basic)
+                    Lớp Sơ Cấp
                   </TableHead>
                 </TableRow>
               </TableHeader>
