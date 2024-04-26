@@ -51,16 +51,8 @@ export default function Hero() {
               className="w-full md:w-auto"
               asChild
             >
-<<<<<<< HEAD
-              <Link
-                href="https://drive.google.com/file/d/1eO5PFuWJca82jIObvuiJHIjahTkDXoy-/view"
-                target="_blank"
-              >
-                Tải Brochure Dự án
-=======
               <Link href={site.informationUrl} target="_blank">
-                Xem chi tiết
->>>>>>> 3bd8394d2531be967572ac1ca05a35304f0989ac
+                Tải Brochure Dự án
               </Link>
             </Button>
           </div>
