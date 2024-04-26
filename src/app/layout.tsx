@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     "đào tạo lập trình được tài trợ Hàn Quốc",
     "dự án đào tạo nhân lực IT từ bộ doanh nghiệp Hàn Quốc",
   ],
+  openGraph: {
+    url: "./opengraph-image.jpg",
+  },
   formatDetection: {
     email: true,
     address: true,
