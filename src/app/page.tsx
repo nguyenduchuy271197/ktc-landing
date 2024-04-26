@@ -10,6 +10,7 @@ import AboutUs from "@/components/about-us";
 import { InfiniteMovingCards } from "@/components/shared/infinite-moving-cards";
 import Process from "@/components/process";
 import Banner from "@/components/banner";
+import Programs from "@/components/programs";
 
 export default function Page() {
   return (
@@ -19,6 +20,7 @@ export default function Page() {
       <Benefits />
       <AboutUs />
       <Process />
+      <Programs />
       <ImageGallery />
       <FAQ />
       <CTA />
