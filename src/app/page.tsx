@@ -8,6 +8,8 @@ import Reviews from "@/components/reviews";
 import Benefits from "@/components/benefits";
 import AboutUs from "@/components/about-us";
 import { InfiniteMovingCards } from "@/components/shared/infinite-moving-cards";
+import Process from "@/components/process";
+import Banner from "@/components/banner";
 
 export default function Page() {
   return (
@@ -16,6 +18,7 @@ export default function Page() {
       <LogoGrid />
       <Benefits />
       <AboutUs />
+      <Process />
       <ImageGallery />
       <FAQ />
       <CTA />

@@ -110,7 +110,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto py-20">
+    <section className="leading-relaxed py-20">
       <div className="container">
         <div className="space-y-3 text-center">
           <h2 className="text-3xl text-gray-800 font-semibold">

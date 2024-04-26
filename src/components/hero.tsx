@@ -32,9 +32,17 @@ export default function Hero() {
             Tuyển sinh và đào tạo những tài năng CNTT chất lượng cao của Việt
             Nam đến làm việc tại các công ty Start-up tại Hàn Quốc
           </p>
-          <div className="flex items-center justify-center text-sm font-medium gap-x-3">
+          <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4">
             <Button size="lg" className="w-full md:w-auto" asChild>
               <Link href="#">Đăng ký ngay</Link>
+            </Button>
+            <Button
+              variant="secondary"
+              size="lg"
+              className="w-full md:w-auto"
+              asChild
+            >
+              <Link href="#">Xem chi tiết</Link>
             </Button>
           </div>
         </div>
