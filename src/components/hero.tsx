@@ -5,6 +5,7 @@ import Image from "next/image";
 import pattern from "/public/patterns/hero-line-pattern.svg";
 import VideoPlayer from "./video-player";
 import logo from "/public/MSS x LIKELION.svg";
+import hackathon from "/public/hackathon.jpg";
 
 export default function Hero() {
   return (
@@ -50,7 +51,13 @@ export default function Hero() {
       <div className="max-w-screen-xl px-8 mx-auto">
         <div className="mt-0 border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl">
           <div className="overflow-hidden rounded-2xl bg-gray-100 md:p-4">
-            <VideoPlayer />
+            {/* <VideoPlayer /> */}
+            <Image
+              src={hackathon}
+              alt="LIKELION Hackathon"
+              className="w-full rounded-md"
+              quality={100}
+            />
           </div>
         </div>
       </div>

@@ -7,12 +7,13 @@ import {
   TableHeader,
   TableRow,
 } from "./ui/table";
+import { Button } from "./ui/button";
 
 export default function Programs() {
   const tableContent = [
     {
       sidebar: "Đối tượng tham gia",
-      lv1: "Lập trình viên front-end, back-end, app đã có kinh nghiệm thực tế, mong muốn làm việc tại Hàn Quốc",
+      lv1: "Lập trình viên đã có kinh nghiệm thực tế, mong muốn làm việc tại Hàn Quốc",
       lv2: "Mid-level developers hoặc Sinh viên CNTT mới ra trường đã có kiến thức về Front-end, Back-end, Phát triển ứng dụng và mong muốn tìm việc tại Hàn Quốc",
       lv3: "Các lập trình viên dự bị (sinh viên CNTT sắp tốt nghiệp) đang tìm kiếm việc làm tại Hàn Quốc",
     },
@@ -27,12 +28,6 @@ export default function Programs() {
       lv1: "Part-time",
       lv2: "Full-time",
       lv3: "Full-time",
-    },
-    {
-      sidebar: "Địa điểm",
-      lv1: "Online",
-      lv2: "Offline tại Văn phòng LIKELION Quận 7",
-      lv3: "Offline tại Văn phòng LIKELION Quận 7",
     },
     {
       sidebar: "Số lượng",
@@ -60,40 +55,33 @@ export default function Programs() {
       lv1: (
         <ul>
           <li>Đào tạo tiếng Hàn cơ bản, tiếng Hàn đi làm</li>
-          <li>Giáo dục văn hóa doanh nghiệp Hàn Quốc</li>
-          <li>Hướng dẫn chuẩn bị sơ yếu lý lịch/phỏng vấn</li>
-          <li>Liên kết giới thiệu việc làm với doanh nghiệp tại Hàn Quốc</li>
+          <li>Đào tạo kỹ năng làm việc tại công ty Hàn Quốc</li>
         </ul>
       ),
       lv2: (
         <ul>
-          <li>Tham gia phát triển dự án thực tế để nâng cấp portfolio</li>
+          <li>Tham gia dự án thực chiến để nâng cấp portfolio</li>
           <li>Đào tạo tiếng Hàn cơ bản, tiếng Hàn đi làm</li>
-          <li>Giáo dục văn hóa doanh nghiệp Hàn Quốc</li>
-          <li>Hướng dẫn chuẩn bị sơ yếu lý lịch/phỏng vấn</li>
-          <li>Liên kết giới thiệu việc làm với doanh nghiệp tại Hàn Quốc</li>
+          <li>Đào tạo kỹ năng làm việc tại công ty Hàn Quốc</li>
         </ul>
       ),
       lv3: (
         <ul>
           <li>Kiến thức lập trình Front-end hoặc Back-end</li>
+          <li>Tham gia dự án thực chiến để nâng cấp portfolio</li>
+          <li>Đào tạo kỹ năng làm việc tại công ty Hàn Quốc</li>
           <li>Đào tạo tiếng Hàn cơ bản, tiếng Hàn đi làm</li>
-          <li>Giáo dục văn hóa doanh nghiệp Hàn Quốc</li>
-          <li>Hướng dẫn chuẩn bị sơ yếu lý lịch/phỏng vấn</li>
-          <li>Liên kết giới thiệu việc làm với doanh nghiệp tại Hàn Quốc</li>
         </ul>
       ),
     },
   ];
   return (
-    <section>
+    <section className="bg-gray-900 text-white text-primary-foreground">
       <div className="container">
         <div className="py-20">
           <div className="space-y-3 text-center">
-            <h2 className="text-3xl text-gray-800 font-semibold">
-              Chương trình đào tạo
-            </h2>
-            <p className="text-gray-600 max-w-lg mx-auto text-lg">
+            <h2 className="text-3xl font-semibold">Chương trình đào tạo</h2>
+            <p className="max-w-lg mx-auto text-lg">
               Dưới đây là những câu hỏi phổ biến về các khóa đào tạo lập trình
               và kết nối việc làm tại Hàn Quốc.
             </p>
@@ -103,21 +91,23 @@ export default function Programs() {
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead></TableHead>
-                  <TableHead className="text-center">
+                  <TableHead className="w-28"></TableHead>
+                  <TableHead className="text-center text-white w-80">
                     Level 1 (Advanced)
                   </TableHead>
-                  <TableHead className="text-center">
+                  <TableHead className="text-center text-white w-80">
                     Level 2 (Intermediate)
                   </TableHead>
-                  <TableHead className="text-center">Level 3 (Basic)</TableHead>
+                  <TableHead className="text-center text-white w-80">
+                    Level 3 (Basic)
+                  </TableHead>
                 </TableRow>
               </TableHeader>
 
               <TableBody>
                 {tableContent.map((content, idx) => (
                   <TableRow key={idx} className={cn("[&_li]:list-disc")}>
-                    <TableCell className="font-medium text-[#64748b] text-center">
+                    <TableCell className="font-medium text-center">
                       {content.sidebar}
                     </TableCell>
                     <TableCell>{content.lv1}</TableCell>
@@ -127,6 +117,12 @@ export default function Programs() {
                 ))}
               </TableBody>
             </Table>
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <Button size="lg" variant="secondary">
+              Xem chi tiết
+            </Button>
           </div>
         </div>
       </div>
