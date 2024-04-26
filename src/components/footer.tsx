@@ -35,13 +35,8 @@ export default function Footer() {
     <footer className="text-gray-500 bg-white py-5 max-w-screen-xl mx-auto">
       <div className="container">
         <div className="max-w-lg sm:mx-auto sm:text-center">
-          <Image
-            src={logo}
-            alt="LIKELION"
-            className=" sm:mx-auto"
-            height={36}
-          />
-          <p className="leading-relaxed mt-4 text-[15px] max-w-sm mx-auto">
+          <Image src={logo} alt="LIKELION" className="sm:mx-auto" height={36} />
+          <p className="leading-relaxed mt-4 text-[15px] sm:max-w-sm sm:mx-auto">
             Với K-Tech College 2024, chúng tôi mang đến cho bạn công việc, cơ
             hội và tương lai!
           </p>

@@ -21,10 +21,10 @@ export default function Hero() {
         className="container mx-auto text-gray-600"
       >
         <div className="max-w-6xl mx-auto space-y-5 text-center">
-          <div className="mb-8">
-            <Image src={logo} alt="" height={35} className="mx-auto" />
+          <div className="mb-4 sm:mb-8">
+            <Image src={logo} alt="" className="mx-auto h-7 sm:h-9" />
           </div>
-          <h1 className="mx-auto text-2xl sm:text-4xl font-bold text-gray-800 lg:text-5xl">
+          <h1 className="mx-auto text-2xl sm:text-4xl font-bold text-gray-800 lg:text-5xl max-w-sm sm:max-w-md md:max-w-none">
             TUYỂN SINH DỰ ÁN KẾT NỐI VIỆC LÀM
             <span
               className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 block mt-2"

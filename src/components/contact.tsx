@@ -32,7 +32,7 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <div className="max-w-xl space-y-3">
-              <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+              <h2 className="text-gray-800 text-2xl sm:text-3xl font-semibold">
                 Liên hệ
               </h2>
               {/* <p>
@@ -41,13 +41,13 @@ export default function Contact() {
               </p> */}
             </div>
             <div>
-              <ul className="mt-8 flex flex-col flex-wrap gap-y-4 lg:gap-x-24">
+              <ul className="mt-4 sm:mt-8 flex flex-col flex-wrap gap-y-2 sm:gap-y-4">
                 {contactMethods.map((item, idx) => (
                   <li key={idx}>
                     <h4 className="sr-only text-gray-800 text-lg font-medium">
                       {item.title}
                     </h4>
-                    <div className="mt-3 flex items-center gap-x-3">
+                    <div className="mt-2 flex items-center gap-x-3">
                       <div className="flex-none text-gray-400">{item.icon}</div>
                       <p>{item.contact}</p>
                     </div>

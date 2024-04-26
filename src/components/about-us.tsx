@@ -117,7 +117,7 @@ export default function AboutUs() {
   return (
     <section id="ve-chung-toi">
       <div className="container">
-        <div className="space-y-12 border-t-2 border-b-2 py-20">
+        <div className="space-y-12 border-t-2 border-b-2 py-6 sm:py-20">
           {text.map((item, idx) => (
             <div
               key={idx}
