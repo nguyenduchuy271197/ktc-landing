@@ -73,14 +73,14 @@ const text = [
     description: (
       <div>
         <p>
-          Đào tạo kỹ năng thực chiến cho nhân lực SW Việt Nam có triển vọng và
-          kết nối việc làm cho họ tới các công ty tại Hàn Quốc, nhằm góp phần
-          giảm bớt tình trạng thiếu nhân lực cho các Start-up Hàn Quốc.
+          Đào tạo kỹ năng thực chiến cho nhân lực Software Việt Nam có triển
+          vọng và kết nối việc làm cho họ tới các công ty tại Hàn Quốc, nhằm góp
+          phần giảm bớt tình trạng thiếu nhân lực cho các Start-up Hàn Quốc.
         </p>
         <p>
           Mang đến cơ hội việc làm, thúc đẩy phát triển tài năng cho các nhân
-          lực ngành CNTT chất lượng cao ở Việt Nam với nguồn tài trợ 10% học phí
-          từ Chính phủ Hàn Quốc.
+          lực ngành CNTT chất lượng cao ở Việt Nam với nguồn tài trợ 100% học
+          phí từ Chính phủ Hàn Quốc.
         </p>
       </div>
     ),
@@ -88,7 +88,7 @@ const text = [
     img: about2,
   },
   {
-    title: "MSS",
+    title: "Nhà tài trợ - MSS",
     description: (
       <div>
         <p>

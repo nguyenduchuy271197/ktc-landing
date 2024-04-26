@@ -9,21 +9,24 @@ import {
 } from "./ui/table";
 import { Button } from "./ui/button";
 import Link from "next/link";
+<<<<<<< HEAD
+=======
 import { site } from "@/config/site";
+>>>>>>> 3bd8394d2531be967572ac1ca05a35304f0989ac
 
 export default function Programs() {
   const tableContent = [
     {
       sidebar: "Đối tượng tham gia",
       lv1: "Lập trình viên đã có kinh nghiệm thực tế, mong muốn làm việc tại Hàn Quốc",
-      lv2: "Mid-level developers hoặc Sinh viên CNTT mới ra trường đã có kiến thức về Front-end, Back-end, Phát triển ứng dụng và mong muốn tìm việc tại Hàn Quốc",
-      lv3: "Các lập trình viên dự bị (sinh viên CNTT sắp tốt nghiệp) đang tìm kiếm việc làm tại Hàn Quốc",
+      lv2: "Lập trình viên mới đi làm hoặc Sinh viên CNTT sắp/đã ra trường và có kiến thức nền tảng",
+      lv3: "Sinh viên CNTT tiềm năng nhưng cần củng cố nền tảng và kỹ năng cơ bản",
     },
     {
       sidebar: "Thời lượng",
       lv1: "4 tuần",
-      lv2: "4 tuần",
-      lv3: "5 tháng (tương đương 800 giờ)",
+      lv2: "6 tuần",
+      lv3: "5 tháng",
     },
     {
       sidebar: "Hình thức",
@@ -124,10 +127,28 @@ export default function Programs() {
             </Table>
           </div>
 
+<<<<<<< HEAD
+          <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4 mt-8">
+            <Button size="lg" className="w-full md:w-auto" asChild>
+              <Link href="#">Đăng ký ngay</Link>
+            </Button>
+            <Button
+              variant="secondary"
+              size="lg"
+              className="w-full md:w-auto"
+              asChild
+            >
+              <Link
+                href="https://drive.google.com/file/d/1eO5PFuWJca82jIObvuiJHIjahTkDXoy-/view"
+                target="_blank"
+              >
+                Tải Brochure Dự án
+=======
           <div className="mt-8 flex justify-center">
             <Button size="lg" variant="secondary" asChild>
               <Link href={site.informationUrl} target="_blank">
                 Xem chi tiết
+>>>>>>> 3bd8394d2531be967572ac1ca05a35304f0989ac
               </Link>
             </Button>
           </div>
