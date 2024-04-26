@@ -88,7 +88,7 @@ const text = [
     img: about2,
   },
   {
-    title: "Nhà tài trợ - MSS",
+    title: "Cơ quan tài trợ - MSS",
     description: (
       <div>
         <p>
