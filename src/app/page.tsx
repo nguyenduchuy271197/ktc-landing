@@ -17,10 +17,10 @@ export default function Page() {
     <div>
       <Hero />
       {/* <LogoGrid /> */}
-      <Benefits />
       <AboutUs />
-      <Process />
+      <Benefits />
       <Programs />
+      <Process />
       <ImageGallery />
       <FAQ />
       <CTA />

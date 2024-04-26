@@ -87,7 +87,7 @@ const text = [
 
 export default function AboutUs() {
   return (
-    <section className="py-14">
+    <section className="pt-14 pb-6">
       <div className="container">
         <div className="space-y-12 border-t-2 border-b-2 py-20">
           {text.map((item, idx) => (

@@ -65,7 +65,7 @@ export default function Benefits() {
           <div className="max-w-xl">
             <div className="max-w-xl space-y-3">
               <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                LỢI ÍCH KHI THAM GIA DỰ ÁN
+                Lợi ích khi tham gia dự án
               </h2>
               <p>
                 Dự án K-Tech College được Bộ Doanh nghiệp vừa và nhỏ và Khởi

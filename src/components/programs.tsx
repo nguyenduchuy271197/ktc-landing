@@ -89,37 +89,45 @@ export default function Programs() {
     <section>
       <div className="container">
         <div className="py-20">
-          <h4 className="pb-12 text-center lg:text-3xl text-xl text-gray-700 font-medium">
-            Chương trình đào tạo
-          </h4>
+          <div className="space-y-3 text-center">
+            <h2 className="text-3xl text-gray-800 font-semibold">
+              Chương trình đào tạo
+            </h2>
+            <p className="text-gray-600 max-w-lg mx-auto text-lg">
+              Dưới đây là những câu hỏi phổ biến về các khóa đào tạo lập trình
+              và kết nối việc làm tại Hàn Quốc.
+            </p>
+          </div>
 
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead></TableHead>
-                <TableHead className="text-center">
-                  Level 1 (Advanced)
-                </TableHead>
-                <TableHead className="text-center">
-                  Level 2 (Intermediate)
-                </TableHead>
-                <TableHead className="text-center">Level 3 (Basic)</TableHead>
-              </TableRow>
-            </TableHeader>
-
-            <TableBody>
-              {tableContent.map((content, idx) => (
-                <TableRow key={idx} className={cn("[&_li]:list-disc")}>
-                  <TableCell className="font-medium text-[#64748b] text-center">
-                    {content.sidebar}
-                  </TableCell>
-                  <TableCell>{content.lv1}</TableCell>
-                  <TableCell className="">{content.lv2}</TableCell>
-                  <TableCell>{content.lv3}</TableCell>
+          <div className="mt-12">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead></TableHead>
+                  <TableHead className="text-center">
+                    Level 1 (Advanced)
+                  </TableHead>
+                  <TableHead className="text-center">
+                    Level 2 (Intermediate)
+                  </TableHead>
+                  <TableHead className="text-center">Level 3 (Basic)</TableHead>
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
+              </TableHeader>
+
+              <TableBody>
+                {tableContent.map((content, idx) => (
+                  <TableRow key={idx} className={cn("[&_li]:list-disc")}>
+                    <TableCell className="font-medium text-[#64748b] text-center">
+                      {content.sidebar}
+                    </TableCell>
+                    <TableCell>{content.lv1}</TableCell>
+                    <TableCell className="">{content.lv2}</TableCell>
+                    <TableCell>{content.lv3}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
         </div>
       </div>
     </section>
