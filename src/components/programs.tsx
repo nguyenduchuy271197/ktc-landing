@@ -86,10 +86,10 @@ export default function Programs() {
         <div className="py-20">
           <div className="space-y-3 text-center">
             <h2 className="text-3xl font-semibold">Chương trình đào tạo</h2>
-            <p className="max-w-lg mx-auto text-lg">
-              Dưới đây là những câu hỏi phổ biến về các khóa đào tạo lập trình
-              và kết nối việc làm tại Hàn Quốc.
-            </p>
+            {/* <p className="max-w-lg mx-auto text-lg">
+              Chương trình đào tạo có thể sẽ thay đổi tùy theo năng lực chuyên
+              ngành software thực tế của các ứng viên được chọn.
+            </p> */}
           </div>
 
           <div className="mt-12">
