@@ -97,7 +97,7 @@ export default function FAQ() {
     },
     {
       q: "Cuối khoá học có bài test đầu ra không ạ? Tiêu chí đánh giá ra sao?",
-      a: "Kết thúc khóa học, học viên sẽ tham gia phát triển dự án theo yêu cầu đề bài từu chính các doanh nghiệp. Đồng thời sẽ được kết nối tham gia phỏng vấn trực tiếp với các doanh nghiệp có như cầu tuyển dụng nhân lực.",
+      a: "Kết thúc khóa học, học viên sẽ tham gia phát triển dự án theo yêu cầu đề bài từ chính các doanh nghiệp. Đồng thời sẽ được kết nối tham gia phỏng vấn trực tiếp với các doanh nghiệp có như cầu tuyển dụng nhân lực.",
     },
     {
       q: "Dự án thực tế trong khoá đào tạo có phải là do doanh nghiệp tuyển dụng ra đề?",
@@ -109,7 +109,7 @@ export default function FAQ() {
     },
     {
       q: "Khi làm việc tại Hàn có yêu cầu Tiếng Anh không?",
-      a: "Không yêu cầu, tuy nhiên có tiếng Anh cơ bản sẽ giúp bạn dễ dàng trao đổi công việc và thực hiện các sinh hoạt khác tại Hàn.",
+      a: "Không yêu cầu, tuy nhiên có tiếng Anh cơ bản sẽ giúp bạn dễ dàng trao đổi công việc và thực hiện các sinh hoạt khác tại Hàn Quốc.",
     },
     {
       q: "Chi phí học như thế nào?",
