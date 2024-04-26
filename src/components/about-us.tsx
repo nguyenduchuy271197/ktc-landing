@@ -1,5 +1,9 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import about1 from "/public/about-1.jpg";
+import about2 from "/public/about-2.jpg";
+import about3 from "/public/about-3.jpg";
+import Image from "next/image";
 
 const stats = [
   {
@@ -30,7 +34,7 @@ const text = [
             <Link
               href="https://www.likelion.edu.vn"
               target="_blank"
-              className="text-indigo-600 font-bold"
+              className="text-orange-600 font-bold"
             >
               LIKELION
             </Link>{" "}
@@ -52,7 +56,7 @@ const text = [
           <ul className="inline-grid gap-y-4 gap-x-12 grid-cols-2">
             {stats.map((item, idx) => (
               <li key={idx} className="">
-                <h4 className="text-4xl text-indigo-600 font-semibold">
+                <h4 className="text-4xl text-orange-600 font-semibold">
                   {item.data}
                 </h4>
                 <p className="mt-2 font-medium">{item.title}</p>
@@ -62,7 +66,7 @@ const text = [
         </div>
       </div>
     ),
-    img: "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    img: about1,
   },
   {
     title: "Mục tiêu của dự án K-Tech College 2024",
@@ -81,7 +85,7 @@ const text = [
       </div>
     ),
 
-    img: "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    img: about2,
   },
   {
     title: "Nhà tài trợ - MSS",
@@ -105,13 +109,13 @@ const text = [
       </div>
     ),
 
-    img: "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    img: about3,
   },
 ];
 
 export default function AboutUs() {
   return (
-    <section className="pt-14 pb-6">
+    <section id="ve-chung-toi">
       <div className="container">
         <div className="space-y-12 border-t-2 border-b-2 py-20">
           {text.map((item, idx) => (
@@ -123,7 +127,7 @@ export default function AboutUs() {
               )}
             >
               <div className="hidden lg:block lg:max-w-xl">
-                <img src={item.img} className="rounded-lg" alt="" />
+                <Image src={item.img} className="rounded-lg" alt={item.title} />
               </div>
 
               <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">

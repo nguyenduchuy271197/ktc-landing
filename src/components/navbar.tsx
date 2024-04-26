@@ -73,7 +73,9 @@ export default function Navbar() {
             <div className="space-y-3 items-center gap-x-6 md:flex md:space-y-0">
               <li>
                 <Button size="sm" className="w-full md:w-auto" asChild>
-                  <Link href="#">Đăng ký ngay</Link>
+                  <Link href={site.registrationUrl} target="_blank">
+                    Đăng ký ngay
+                  </Link>
                 </Button>
               </li>
             </div>

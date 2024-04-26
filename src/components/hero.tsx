@@ -6,13 +6,14 @@ import pattern from "/public/patterns/hero-line-pattern.svg";
 import VideoPlayer from "./video-player";
 import logo from "/public/MSS x LIKELION.svg";
 import hackathon from "/public/hackathon.jpg";
+import { site } from "@/config/site";
 
 export default function Hero() {
   return (
-    <section className="relative">
+    <section className="relative mb-14">
       <Image
         src={pattern}
-        className="absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/2 -z-10"
+        className="absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/2 -z-10 min-w-[1800px] hidden md:block"
         alt=""
       />
       <GradientWrapper
@@ -25,7 +26,12 @@ export default function Hero() {
           </div>
           <h1 className="mx-auto text-2xl sm:text-4xl font-bold text-gray-800 lg:text-5xl">
             TUYỂN SINH DỰ ÁN KẾT NỐI VIỆC LÀM
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#9867F0] to-[#ED4E50] block mt-2">
+            <span
+              className="bg-clip-text text-transparent bg-gradient-to-r from-[#9867F0] to-[#ED4E50] block mt-2"
+              style={{
+                WebkitBackgroundClip: "text",
+              }}
+            >
               K-TECH COLLEGE 2024
             </span>
           </h1>
@@ -35,7 +41,9 @@ export default function Hero() {
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4">
             <Button size="lg" className="w-full md:w-auto" asChild>
-              <Link href="#">Đăng ký ngay</Link>
+              <Link href={site.registrationUrl} target="_blank">
+                Đăng ký ngay
+              </Link>
             </Button>
             <Button
               variant="secondary"
@@ -43,11 +51,16 @@ export default function Hero() {
               className="w-full md:w-auto"
               asChild
             >
+<<<<<<< HEAD
               <Link
                 href="https://drive.google.com/file/d/1eO5PFuWJca82jIObvuiJHIjahTkDXoy-/view"
                 target="_blank"
               >
                 Tải Brochure Dự án
+=======
+              <Link href={site.informationUrl} target="_blank">
+                Xem chi tiết
+>>>>>>> 3bd8394d2531be967572ac1ca05a35304f0989ac
               </Link>
             </Button>
           </div>
