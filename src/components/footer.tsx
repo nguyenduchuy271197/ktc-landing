@@ -31,10 +31,9 @@ export default function Footer() {
             className=" sm:mx-auto"
             height={36}
           />
-          <p className="leading-relaxed mt-4 text-[15px]">
-            Lorem Ipsum has been the industrys standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
+          <p className="leading-relaxed mt-4 text-[15px] max-w-sm mx-auto">
+            Với K-Tech College 2024, chúng tôi mang đến cho bạn công việc, cơ
+            hội và tương lai!
           </p>
         </div>
         {/* <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">

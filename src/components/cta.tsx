@@ -20,7 +20,7 @@ export default function CTA() {
                 Cơ hội làm việc tại Hàn Quốc ngay trong tầm tay bạn
               </h3>
               <p className="mt-4 leading-relaxed text-gray-300">
-                Tham gia ngay dự án K-Tech College cùng MSS và LIKELION để cơ cơ
+                Tham gia ngay dự án K-Tech College cùng MSS và LIKELION để có cơ
                 hội đến và làm việc tại Hàn Quốc với chi phí 0 đồng.
               </p>
             </div>
