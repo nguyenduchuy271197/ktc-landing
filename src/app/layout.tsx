@@ -44,6 +44,9 @@ export const metadata: Metadata = {
   },
   category: "education",
   referrer: "origin-when-cross-origin",
+  other: {
+    googleSiteVerification: "To9bBudd-R7vTgpZ5KCCm4DUwwuMpfI44qhAU2EwfqE",
+  },
 };
 
 export default function RootLayout({
@@ -53,6 +56,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="To9bBudd-R7vTgpZ5KCCm4DUwwuMpfI44qhAU2EwfqE"
+        />
+      </head>
       <body className={cn("antialiased ", fontSans.className)}>
         <Banner />
         <Navbar />
