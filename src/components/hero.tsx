@@ -47,7 +47,7 @@ export default function Hero() {
                 href="https://drive.google.com/file/d/1eO5PFuWJca82jIObvuiJHIjahTkDXoy-/view"
                 target="_blank"
               >
-                Xem chi tiết
+                Tải Brochure Dự án
               </Link>
             </Button>
           </div>
