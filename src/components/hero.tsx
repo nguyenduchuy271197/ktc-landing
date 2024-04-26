@@ -43,7 +43,9 @@ export default function Hero() {
               className="w-full md:w-auto"
               asChild
             >
-              <Link href="#">Xem chi tiết</Link>
+              <Link href="https://drive.google.com/file/d/1eO5PFuWJca82jIObvuiJHIjahTkDXoy-/view">
+                Xem chi tiết
+              </Link>
             </Button>
           </div>
         </div>
