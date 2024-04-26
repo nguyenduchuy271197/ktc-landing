@@ -124,7 +124,7 @@ export default function Programs() {
             </Table>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4">
+          <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4 mt-12">
             <Button size="lg" className="w-full md:w-auto" asChild>
               <Link href={site.registrationUrl} target="_blank">
                 Đăng ký ngay
