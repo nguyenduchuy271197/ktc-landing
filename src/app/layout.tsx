@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { cn } from "@/lib/utils";
 import Banner from "@/components/banner";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -57,6 +58,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <GoogleAnalytics gaId="G-029L97QDMN" />
       </body>
     </html>
   );
