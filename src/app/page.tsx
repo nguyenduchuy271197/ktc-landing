@@ -4,7 +4,6 @@ import FAQ from "@/components/faq";
 import Hero from "@/components/hero";
 import ImageGallery from "@/components/image-gallery";
 import LogoGrid from "@/components/logo-grid";
-import Reviews from "@/components/reviews";
 import Benefits from "@/components/benefits";
 import AboutUs from "@/components/about-us";
 import { InfiniteMovingCards } from "@/components/shared/infinite-moving-cards";
