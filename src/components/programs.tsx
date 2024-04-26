@@ -76,7 +76,10 @@ export default function Programs() {
     },
   ];
   return (
-    <section className="bg-gray-900 text-white text-primary-foreground">
+    <section
+      className="bg-gray-900 text-white text-primary-foreground"
+      id="chuong-trinh-dao-tao"
+    >
       <div className="container">
         <div className="py-20">
           <div className="space-y-3 text-center">

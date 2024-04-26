@@ -9,7 +9,7 @@ import hackathon from "/public/hackathon.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative">
+    <section className="relative mb-14">
       <Image
         src={pattern}
         className="absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/2 -z-10"
@@ -25,7 +25,12 @@ export default function Hero() {
           </div>
           <h1 className="mx-auto text-2xl sm:text-4xl font-bold text-gray-800 lg:text-5xl">
             TUYỂN SINH DỰ ÁN KẾT NỐI VIỆC LÀM
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#9867F0] to-[#ED4E50] block mt-2">
+            <span
+              className="bg-clip-text text-transparent bg-gradient-to-r from-[#9867F0] to-[#ED4E50] block mt-2"
+              style={{
+                WebkitBackgroundClip: "text",
+              }}
+            >
               K-TECH COLLEGE 2024
             </span>
           </h1>
