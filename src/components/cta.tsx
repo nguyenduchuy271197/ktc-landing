@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import pattern from "/public/patterns/cta-pattern.jpg";
+import { site } from "@/config/site";
 
 export default function CTA() {
   return (
@@ -26,7 +27,9 @@ export default function CTA() {
             </div>
             <div className="items-center justify-center gap-3 mt-4 sm:flex">
               <Button asChild>
-                <Link href="">Đăng ký ngay</Link>
+                <Link href={site.registrationUrl} target="_blank">
+                  Đăng ký ngay
+                </Link>
               </Button>
             </div>
           </div>

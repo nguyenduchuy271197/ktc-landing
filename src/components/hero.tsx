@@ -6,13 +6,14 @@ import pattern from "/public/patterns/hero-line-pattern.svg";
 import VideoPlayer from "./video-player";
 import logo from "/public/MSS x LIKELION.svg";
 import hackathon from "/public/hackathon.jpg";
+import { site } from "@/config/site";
 
 export default function Hero() {
   return (
     <section className="relative mb-14">
       <Image
         src={pattern}
-        className="absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/2 -z-10"
+        className="absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/2 -z-10 min-w-[1800px] hidden md:block"
         alt=""
       />
       <GradientWrapper
@@ -40,7 +41,9 @@ export default function Hero() {
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4">
             <Button size="lg" className="w-full md:w-auto" asChild>
-              <Link href="#">Đăng ký ngay</Link>
+              <Link href={site.registrationUrl} target="_blank">
+                Đăng ký ngay
+              </Link>
             </Button>
             <Button
               variant="secondary"
@@ -48,10 +51,7 @@ export default function Hero() {
               className="w-full md:w-auto"
               asChild
             >
-              <Link
-                href="https://drive.google.com/file/d/1eO5PFuWJca82jIObvuiJHIjahTkDXoy-/view"
-                target="_blank"
-              >
+              <Link href={site.informationUrl} target="_blank">
                 Xem chi tiết
               </Link>
             </Button>

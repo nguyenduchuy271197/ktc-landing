@@ -8,6 +8,8 @@ import {
   TableRow,
 } from "./ui/table";
 import { Button } from "./ui/button";
+import Link from "next/link";
+import { site } from "@/config/site";
 
 export default function Programs() {
   const tableContent = [
@@ -123,8 +125,10 @@ export default function Programs() {
           </div>
 
           <div className="mt-8 flex justify-center">
-            <Button size="lg" variant="secondary">
-              Xem chi tiết
+            <Button size="lg" variant="secondary" asChild>
+              <Link href={site.informationUrl} target="_blank">
+                Xem chi tiết
+              </Link>
             </Button>
           </div>
         </div>
