@@ -4,24 +4,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "./ui/button";
-import logo from "/public/logo.png";
+import logo from "/public/logo.svg";
 import { site } from "@/config/site";
 
 export default function Navbar() {
   const [state, setState] = useState(false);
 
   return (
-    <nav className="bg-white border-b w-full md:static md:text-sm md:border-none">
+    <nav className="border-b w-full md:relative md:text-sm md:border-none z-50 bg-[#101416]">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-6 md:block">
           <Link href="#">
-            <Image src={logo} alt="LIKELION" height={16} />
+          <Image src={logo} alt="LIKELION" height={28} />
           </Link>
           <div className="md:hidden">
-            <button
-              className="text-gray-500 hover:text-gray-800"
-              onClick={() => setState(!state)}
-            >
+            <button className="text-white" onClick={() => setState(!state)}>
               {state ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,10 +59,7 @@ export default function Navbar() {
           <ul className="justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
             {site.routes.map((item, idx) => {
               return (
-                <li
-                  key={idx}
-                  className="text-gray-700 hover:text-orange-600 transition-colors"
-                >
+                <li key={idx} className="text-white transition-colors">
                   <Link href={item.path} className="block">
                     {item.title}
                   </Link>

@@ -4,27 +4,25 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 import pattern from "/public/patterns/hero-line-pattern.svg";
 import VideoPlayer from "./video-player";
-import logo from "/public/MSS x LIKELION.svg";
+import logo from "/public/MSSxKOSMExLIKELION Black BG.svg";
 import hackathon from "/public/hackathon.jpg";
 import { site } from "@/config/site";
 
 export default function Hero() {
   return (
-    <section className="relative mb-14">
+    <section className="relative mb-14 bg-[#101416] text-white overflow-hidden">
       <Image
         src={pattern}
-        className="absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/2 -z-10 min-w-[1800px] hidden md:block"
+        className="absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/2 min-w-[1800px] hidden md:block z-20"
         alt=""
       />
-      <GradientWrapper
-        wrapperClassName="inset-0"
-        className="container mx-auto text-gray-600"
-      >
+
+      <div className="relative py-14 md:py-24 z-30 container">
         <div className="max-w-6xl mx-auto space-y-5 text-center">
           <div className="mb-4 sm:mb-8">
-            <Image src={logo} alt="" className="mx-auto h-7 sm:h-9" />
+            <Image src={logo} alt="" className="mx-auto h-6 sm:h-7" />
           </div>
-          <h1 className="mx-auto text-2xl sm:text-4xl font-bold text-gray-800 lg:text-5xl max-w-sm sm:max-w-md md:max-w-none">
+          <h1 className="mx-auto text-2xl sm:text-4xl font-bold lg:text-5xl max-w-sm sm:max-w-md md:max-w-none">
             TUYỂN SINH DỰ ÁN KẾT NỐI VIỆC LÀM
             <span
               className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 block mt-2"
@@ -57,8 +55,8 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-      </GradientWrapper>
-      <div className="max-w-screen-xl px-8 mx-auto">
+      </div>
+      <div className="relative max-w-screen-xl px-8 mx-auto z-30 pb-20">
         <div className="mt-0 border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl">
           <div className="overflow-hidden rounded-2xl bg-gray-100 md:p-4">
             {/* <VideoPlayer /> */}

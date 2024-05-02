@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "/public/MSS x LIKELION.svg";
+import logo from "/public/MSSxKOSMExLIKELION.svg";
 import facebook from "/public/socials/facebook.svg";
 import instagram from "/public/socials/instagram.svg";
 import tiktok from "/public/socials/tiktok.svg";
