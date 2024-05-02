@@ -27,22 +27,22 @@ const renderer = ({
           Thời gian tuyển sinh dự kiến sẽ kết thúc sau
         </p>
         <div className="flex items-center gap-1 font-bold">
-          <div className="w-8 sm:w-10 py-1 rounded-md bg-indigo-100 text-indigo-600 flex flex-col items-center leading-none">
+          <div className="w-8 sm:w-10 py-1 rounded-md bg-indigo-100 text-orange-700 flex flex-col items-center leading-none">
             {zeroPad(days)}
             <span className="text-[8px] font-medium">ngày</span>
           </div>
           <span>:</span>
-          <div className="w-8 sm:w-10 py-1 rounded-md bg-indigo-100 text-indigo-600 flex flex-col items-center leading-none">
+          <div className="w-8 sm:w-10 py-1 rounded-md bg-indigo-100 text-orange-700 flex flex-col items-center leading-none">
             {zeroPad(hours)}
             <span className="text-[8px] font-medium">giờ</span>
           </div>
           <span>:</span>
-          <div className="w-8 sm:w-10 py-1 rounded-md bg-indigo-100 text-indigo-600 flex flex-col items-center leading-none">
+          <div className="w-8 sm:w-10 py-1 rounded-md bg-indigo-100 text-orange-700 flex flex-col items-center leading-none">
             {zeroPad(minutes)}
             <span className="text-[8px] font-medium">phút</span>
           </div>
           <span>:</span>
-          <div className="w-8 sm:w-10 py-1 rounded-md bg-indigo-100 text-indigo-600 flex flex-col items-center leading-none">
+          <div className="w-8 sm:w-10 py-1 rounded-md bg-indigo-100 text-orange-700 flex flex-col items-center leading-none">
             {zeroPad(seconds)}
             <span className="text-[8px] font-medium">giây</span>
           </div>

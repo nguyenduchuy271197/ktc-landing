@@ -1,9 +1,6 @@
 import Link from "next/link";
-import GradientWrapper from "./gradient-wrapper";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import pattern from "/public/patterns/hero-line-pattern.svg";
-import VideoPlayer from "./video-player";
 import logo from "/public/MSSxKOSMExLIKELION Black BG.svg";
 import bg1 from "/public/hero-bg-1.png";
 import bg2 from "/public/hero-bg-2.png";
@@ -51,21 +48,11 @@ export default function Hero() {
               </Button>
             </div>
           </div>
-          <div className="absolute max-w-screen-sm px-8 mx-auto z-20 pb-40 -bottom-[120%] -right-40 opacity-40 lg:opacity-100">
-            <Image
-              src={bg1}
-              alt="KTC - Road to Korea"
-              className="w-full"
-              quality={100}
-            />
+          <div className="absolute px-8 z-20 pb-40 -bottom-[110%] -right-28 opacity-40 lg:opacity-100">
+            <Image src={bg1} alt="KTC - Road to Korea" width={500} />
           </div>
-          <div className="absolute max-w-screen-sm px-8 mx-auto z-20 pb-40 -bottom-[130%] md:-bottom-[80%] -left-8 opacity-40 lg:opacity-100">
-            <Image
-              src={bg2}
-              alt="KTC - Road to Korea"
-              className="w-full"
-              quality={100}
-            />
+          <div className="absolute px-8 z-20 pb-40 -bottom-[130%] md:-bottom-[80%] -left-8 opacity-40 lg:opacity-100">
+            <Image src={bg2} alt="KTC - Road to Korea" width={300} />
           </div>
         </div>
       </div>
