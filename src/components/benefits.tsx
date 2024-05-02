@@ -57,7 +57,7 @@ export default function Benefits() {
   ];
 
   return (
-    <section className="py-14">
+    <section className="pt-14 pb-20">
       <div className="container">
         <div className=" text-gray-600 gap-8 grid md:grid-cols-[3fr_2fr] overflow-hidden">
           <div className="max-w-xl">
