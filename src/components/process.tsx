@@ -1,31 +1,31 @@
 const steps = [
   {
-    time: "22/04/2024 - 03/05/2024",
+    time: "22/04/2024 - 15/05/2024",
     title: "Ứng tuyển",
     description:
       "Ứng viên gửi Hồ sơ ứng tuyển về LIKELION trước hạn chót đăng ký",
   },
   {
-    time: "07/05/2024 - 10/05/2024",
+    time: "16/05/2024 - 20/05/2024",
     title: "Xét duyệt hồ sơ",
     description: "Bộ phận thẩm định tiến hành chọn lọc các ứng viên phù hợp",
   },
   {
-    time: "13/05/2024 - 17/05/2024",
+    time: "21/05/2024",
+    title: "Kết quả tuyển chọn",
+    description:
+      "Sau khi vượt qua 3 vòng đánh giá, ứng viên sẽ được xếp vào cấp lớp phù hợp",
+  },
+  {
+    time: "22/05/2024 - 24/05/2024",
     title: "Kiểm tra năng lực SW",
     description: "Ứng viên làm bài kiểm tra kiến thức và năng lực chuyên môn",
   },
   {
-    time: "20/05/2024 - 24/05/2024",
+    time: "27/05/2024 - 31/05/2024",
     title: "Phỏng vấn đầu vào",
     description:
       "Ứng viên trình bày động lực và thuyết phục Ủy ban phỏng vấn bao gồm: quản lý của doanh nghiệp, lập trình viên chuyên nghiệp và chuyên viên đào tạo.",
-  },
-  {
-    time: "31/05/2024",
-    title: "Kết quả tuyển chọn",
-    description:
-      "Sau khi vượt qua 3 vòng đánh giá, ứng viên sẽ được xếp vào cấp lớp phù hợp",
   },
   {
     time: "06/2024 - 11/2024",
