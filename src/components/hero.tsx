@@ -12,8 +12,8 @@ import { site } from "@/config/site";
 export default function Hero() {
   return (
     <section className="relative bg-[#101416] text-white overflow-hidden">
-      <div className="relative py-14 md:py-28 z-30 container h-screen md:h-[85vh]">
-        <div className="max-w-6xl mx-auto space-y-5 text-center">
+      <div className="relative py-14 md:py-28 container h-screen md:h-[85vh]">
+        <div className="relative max-w-6xl mx-auto space-y-5 text-center z-30">
           <div className="mb-4 sm:mb-8">
             <Image src={logo} alt="" className="mx-auto h-6 sm:h-7" />
           </div>
@@ -50,22 +50,22 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-      </div>
-      <div className="absolute max-w-screen-sm px-8 mx-auto z-20 pb-40 -bottom-44 -right-32 md:-right-16 opacity-40 lg:opacity-100">
-        <Image
-          src={bg1}
-          alt="LIKELION Hackathon"
-          className="w-full rounded-md"
-          quality={100}
-        />
-      </div>
-      <div className="absolute max-w-screen-sm px-8 mx-auto z-20 pb-40 -bottom-40 md:bottom-0  left-0 md:left-20 opacity-40 lg:opacity-100">
-        <Image
-          src={bg2}
-          alt="LIKELION Hackathon"
-          className="w-full rounded-md"
-          quality={100}
-        />
+        <div className="absolute max-w-screen-sm px-8 mx-auto z-20 pb-40 -bottom-20 -right-32 md:-right-16 opacity-40 lg:opacity-100">
+          <Image
+            src={bg1}
+            alt="KTC - Road to Korea"
+            className="w-full"
+            quality={100}
+          />
+        </div>
+        <div className="absolute max-w-screen-sm px-8 mx-auto z-20 pb-40 -bottom-20 md:bottom-20 left-0 md:left-20 opacity-40 lg:opacity-100">
+          <Image
+            src={bg2}
+            alt="KTC - Road to Korea"
+            className="w-full"
+            quality={100}
+          />
+        </div>
       </div>
     </section>
   );
