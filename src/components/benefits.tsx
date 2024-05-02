@@ -43,6 +43,7 @@ export default function Benefits() {
           <Link
             href="https://www.paylab.com/kr/salaryinfo/information-technology"
             className="underline"
+            target="_blank"
           >
             tại đây
           </Link>
