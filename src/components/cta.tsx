@@ -10,7 +10,7 @@ export default function CTA() {
   return (
     <section className="py-12">
       <div className="container">
-        <div className="relative px-4 sm:px-8 py-8 sm:py-12 overflow-hidden md:px-8 rounded-3xl bg-gray-900">
+        <div className="relative px-4 sm:px-8 py-8 sm:py-12 overflow-hidden md:px-8 rounded-3xl bg-[#101416]">
           <Image
             src={pattern}
             className="absolute inset-0 object-cover md:hidden"

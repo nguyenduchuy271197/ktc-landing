@@ -79,7 +79,7 @@ export default function Programs() {
   ];
   return (
     <section
-      className="bg-gray-900 text-white text-primary-foreground"
+      className="bg-[#101416] text-white text-primary-foreground"
       id="chuong-trinh-dao-tao"
     >
       <div className="container">
