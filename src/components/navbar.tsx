@@ -11,11 +11,11 @@ export default function Navbar() {
   const [state, setState] = useState(false);
 
   return (
-    <nav className="border-b w-full md:relative md:text-sm md:border-none z-50 bg-[#101416]">
+    <nav className="border-b border-orange-400/50 w-full md:relative md:text-sm md:border-none z-50 bg-[#101416]">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-6 md:block">
           <Link href="#">
-          <Image src={logo} alt="LIKELION" height={28} />
+            <Image src={logo} alt="LIKELION" className="h-6 md:h-10 w-auto" />
           </Link>
           <div className="md:hidden">
             <button className="text-white" onClick={() => setState(!state)}>

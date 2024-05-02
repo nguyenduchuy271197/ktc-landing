@@ -11,7 +11,8 @@ const buttonVariants = cva(
       variant: {
         default:
           "text-white bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 hover:shadow-orange-300",
-        secondary: "border",
+        secondary: "border bg-white text-orange-600",
+        outline: "border",
       },
       size: {
         sm: "h-10 px-6",
