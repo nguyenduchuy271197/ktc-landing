@@ -5,7 +5,7 @@ import Image from "next/image";
 import pattern from "/public/patterns/hero-line-pattern.svg";
 import VideoPlayer from "./video-player";
 import logo from "/public/MSSxKOSMExLIKELION Black BG.svg";
-import hackathon from "/public/hackathon.jpg";
+import hackathon from "/public/Graphic 1.png";
 import { site } from "@/config/site";
 
 export default function Hero() {
