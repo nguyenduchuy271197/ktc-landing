@@ -9,7 +9,7 @@ import { site } from "@/config/site";
 export default function Hero() {
   return (
     <section className="relative bg-[#101416] text-white overflow-hidden">
-      <div className="relative py-14 md:py-28 container h-screen md:h-[85vh]">
+      <div className="relative py-14 md:py-28 container h-dvh md:h-[85dvh]">
         <div className="relative">
           <div className="relative max-w-6xl mx-auto space-y-5 text-center z-30">
             <div className="mb-4 sm:mb-8">
