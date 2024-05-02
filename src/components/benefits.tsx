@@ -37,18 +37,16 @@ export default function Benefits() {
       icon: <CircleDollarSign className="size-6" strokeWidth={1.5} />,
       title: "Tăng thu nhập cá nhân",
       desc: (
-        <div>
-          <p>
-            Mức lương trung bình mỗi tháng cho nhân sự ngành IT tại Hàn là từ
-            2,506 USD - 6,075 USD. Xem thêm thông tin{" "}
-            <Link
-              href="https://www.paylab.com/kr/salaryinfo/information-technology"
-              className="underline"
-            >
-              tại đây
-            </Link>
-          </p>
-        </div>
+        <p>
+          Mức lương trung bình mỗi tháng cho nhân sự ngành IT tại Hàn là từ
+          2,506 USD - 6,075 USD. Xem thêm thông tin{" "}
+          <Link
+            href="https://www.paylab.com/kr/salaryinfo/information-technology"
+            className="underline"
+          >
+            tại đây
+          </Link>
+        </p>
       ),
     },
     {
@@ -85,7 +83,7 @@ export default function Benefits() {
                       <h4 className="text-lg text-gray-800 font-semibold">
                         {item.title}
                       </h4>
-                      <p className="mt-3">{item.desc}</p>
+                      <div className="mt-3">{item.desc}</div>
                     </div>
                   </li>
                 ))}
