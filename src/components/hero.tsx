@@ -9,7 +9,7 @@ import { site } from "@/config/site";
 export default function Hero() {
   return (
     <section className="relative bg-[#101416] text-white overflow-hidden">
-      <div className="relative py-14 md:py-28 container h-dvh md:h-[85dvh]">
+      <div className="relative py-14 md:py-28 container md:h-[85dvh]">
         <div className="relative">
           <div className="relative max-w-6xl mx-auto space-y-5 text-center z-30">
             <div className="mb-4 sm:mb-8">
@@ -48,11 +48,19 @@ export default function Hero() {
               </Button>
             </div>
           </div>
-          <div className="absolute px-8 z-20 pb-40 -bottom-[110%] -right-28 opacity-40 lg:opacity-100">
-            <Image src={bg1} alt="KTC - Road to Korea" width={500} />
+          <div className="absolute px-8 z-20 pb-40 -bottom-[60%] md:-bottom-[110%] -right-28 opacity-40 lg:opacity-100">
+            <Image
+              src={bg1}
+              alt="KTC - Road to Korea"
+              className="w-[300px] md:w-[500px]"
+            />
           </div>
-          <div className="absolute px-8 z-20 pb-40 -bottom-[130%] md:-bottom-[80%] -left-8 opacity-40 lg:opacity-100">
-            <Image src={bg2} alt="KTC - Road to Korea" width={300} />
+          <div className="absolute px-8 z-20 pb-40 -bottom-[50%] md:-bottom-[80%] -left-8 opacity-40 lg:opacity-100">
+            <Image
+              src={bg2}
+              alt="KTC - Road to Korea"
+              className="w-[200px] md:w-[300px]"
+            />
           </div>
         </div>
       </div>

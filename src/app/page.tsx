@@ -17,9 +17,9 @@ export default function Page() {
     <div>
       <Hero />
       {/* <LogoGrid /> */}
-      <AboutUs />
-      <Slogan />
       <Benefits />
+      <Slogan />
+      <AboutUs />
       <Programs />
       <Process />
       <ImageGallery />
