@@ -66,7 +66,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <KtcPopup />
+        {/* <KtcPopup /> */}
         <GoogleAnalytics gaId="G-029L97QDMN" />
         <Script
           id="hotjar-heatmap"
