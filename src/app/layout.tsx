@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import Banner from "@/components/banner";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
+import KtcPopup from "@/components/ktc-pop-up";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -65,6 +66,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <KtcPopup />
         <GoogleAnalytics gaId="G-029L97QDMN" />
         <Script
           id="hotjar-heatmap"
