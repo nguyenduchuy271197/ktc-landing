@@ -1,3 +1,4 @@
+"use client";
 import {
   BookCheck,
   BriefcaseBusiness,
@@ -10,6 +11,7 @@ import {
 import Image from "next/image";
 import benefitSrc from "/public/benefits.jpg";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Benefits() {
   const features = [
@@ -60,7 +62,12 @@ export default function Benefits() {
   return (
     <section className="pt-14 pb-20">
       <div className="container">
-        <div className=" text-gray-600 gap-8 grid md:grid-cols-[3fr_2fr] overflow-hidden">
+        <motion.div
+          className=" text-gray-600 gap-8 grid md:grid-cols-[3fr_2fr] overflow-hidden"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
           <div className="max-w-xl">
             <div className="max-w-xl space-y-3">
               <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
@@ -101,7 +108,7 @@ export default function Benefits() {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

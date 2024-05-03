@@ -4,6 +4,7 @@ import about1 from "/public/about-1.jpg";
 import about2 from "/public/about-2.jpg";
 import about3 from "/public/about-3.jpg";
 import Image from "next/image";
+import AnimationLayout from "./shared/animation-layout";
 
 const stats = [
   {
@@ -117,31 +118,43 @@ export default function AboutUs() {
   return (
     <section id="ve-chung-toi">
       <div className="container">
-        <div className="space-y-12 py-6 sm:py-20">
-          {text.map((item, idx) => (
-            <div
-              key={idx}
-              className={cn(
-                "mx-auto text-gray-600 gap-x-12 items-start justify-between lg:flex md:pb-8",
-                idx % 2 != 1 && "lg:flex-row-reverse"
-              )}
-            >
-              <div className="hidden lg:block lg:max-w-xl">
-                <Image src={item.img} className="rounded-lg" alt={item.title} />
-              </div>
+        <AnimationLayout
+          className="duration-1000 delay-300"
+          isInviewState={{
+            trueState: "opacity-1",
+            falseState: "opacity-0",
+          }}
+        >
+          <div className="space-y-12 py-6 sm:py-20">
+            {text.map((item, idx) => (
+              <div
+                key={idx}
+                className={cn(
+                  "mx-auto text-gray-600 gap-x-12 items-start justify-between lg:flex md:pb-8",
+                  idx % 2 != 1 && "lg:flex-row-reverse"
+                )}
+              >
+                <div className="hidden lg:block lg:max-w-xl">
+                  <Image
+                    src={item.img}
+                    className="rounded-lg"
+                    alt={item.title}
+                  />
+                </div>
 
-              <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">
-                <div className="max-w-2xl">
-                  <h3 className="text-gray-800 text-2xl font-semibold sm:text-3xl mb-4">
-                    {item.title}
-                  </h3>
+                <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">
+                  <div className="max-w-2xl">
+                    <h3 className="text-gray-800 text-2xl font-semibold sm:text-3xl mb-4">
+                      {item.title}
+                    </h3>
 
-                  <div className="[&_p]:mb-3">{item.description}</div>
+                    <div className="[&_p]:mb-3">{item.description}</div>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </AnimationLayout>
       </div>
     </section>
   );
