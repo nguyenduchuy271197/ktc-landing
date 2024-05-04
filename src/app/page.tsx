@@ -12,6 +12,7 @@ import Banner from "@/components/banner";
 import Programs from "@/components/programs";
 import Slogan from "@/components/slogan";
 import Register from "@/components/register";
+import Advantages from "@/components/advantages";
 
 export default function Page() {
   return (
@@ -19,6 +20,7 @@ export default function Page() {
       <Hero />
       {/* <LogoGrid /> */}
       <Benefits />
+      <Advantages />
       <Slogan />
       <AboutUs />
       <Programs />
