@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import { cn } from "@/lib/utils";
 import Banner from "@/components/banner";
 import ThirdParties from "@/components/third-parties";
+import PhoneCall from "@/components/shared/phone-call";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -65,6 +66,7 @@ export default function RootLayout({
         {children}
         <Footer />
         {/* <KtcPopup /> */}
+        <PhoneCall />
         <ThirdParties />
       </body>
     </html>
