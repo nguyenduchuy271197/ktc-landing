@@ -118,17 +118,17 @@ export default function AboutUs() {
   return (
     <section id="ve-chung-toi">
       <div className="container">
-        <AnimationLayout
-          className="duration-1000 delay-300"
-          isInviewState={{
-            trueState: "opacity-1",
-            falseState: "opacity-0",
-          }}
-        >
-          <div className="space-y-12 py-6 sm:py-20">
-            {text.map((item, idx) => (
+        <div className="space-y-12 py-6 sm:py-20">
+          {text.map((item, idx) => (
+            <AnimationLayout
+              className="duration-1000 delay-300"
+              isInviewState={{
+                trueState: "opacity-1",
+                falseState: "opacity-0 translate-y-12",
+              }}
+              key={idx}
+            >
               <div
-                key={idx}
                 className={cn(
                   "mx-auto text-gray-600 gap-x-12 items-start justify-between lg:flex md:pb-8",
                   idx % 2 != 1 && "lg:flex-row-reverse"
@@ -152,9 +152,9 @@ export default function AboutUs() {
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-        </AnimationLayout>
+            </AnimationLayout>
+          ))}
+        </div>
       </div>
     </section>
   );

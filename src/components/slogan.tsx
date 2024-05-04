@@ -6,6 +6,7 @@ import leftLine from "/public/patterns/cta-pattern-left.svg";
 import rightLine from "/public/patterns/cta-pattern-right.svg";
 import { site } from "@/config/site";
 import slogan from "/public/slogan.png";
+import AnimationLayout from "./shared/animation-layout";
 
 export default function Slogan() {
   return (

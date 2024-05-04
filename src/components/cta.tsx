@@ -5,6 +5,7 @@ import pattern from "/public/patterns/cta-pattern.jpg";
 import leftLine from "/public/patterns/cta-pattern-left.svg";
 import rightLine from "/public/patterns/cta-pattern-right.svg";
 import { site } from "@/config/site";
+import AnimationLayout from "./shared/animation-layout";
 
 export default function CTA() {
   return (
