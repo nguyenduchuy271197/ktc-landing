@@ -12,7 +12,7 @@ export default function Benefits() {
     },
     {
       icon: <Laptop className="size-6" strokeWidth={1.5} />,
-      title: "Hỗ trợ cho mượn laptop và Monitor",
+      title: "Hỗ trợ cho mượn laptop và màn hình",
       desc: "Ứng viên được hỗ trợ cho mượn laptop trong suốt quá trình học (tùy theo nhu cầu), nhằm đảm bảo việc học không bị gián đoạn và thực hành hiệu quả",
     },
     {
