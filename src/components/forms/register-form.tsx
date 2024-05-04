@@ -110,7 +110,7 @@ export default function RegisterForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Câu hỏi</FormLabel>
+              <FormLabel>Nội dung tư vấn</FormLabel>
               <FormControl>
                 <Textarea
                   placeholder="Message"
@@ -124,7 +124,7 @@ export default function RegisterForm() {
         />
         <Button type="submit" className="w-full" disabled={isPending}>
           {isPending && <Loader2 className="mr-2 size-4e animate-spin" />}
-          Đăng ký để tư vấn
+          Đăng ký ngay
         </Button>
       </form>
     </Form>
