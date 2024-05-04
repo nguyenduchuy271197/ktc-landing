@@ -10,6 +10,7 @@ import {
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { site } from "@/config/site";
+import AnimationLayout from "./shared/animation-layout";
 
 export default function Programs() {
   const tableContent = [
