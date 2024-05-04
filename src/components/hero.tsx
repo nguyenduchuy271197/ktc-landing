@@ -63,18 +63,18 @@ export default function Hero() {
               </Button>
             </div>
           </div>
-          <div className="absolute px-8 z-20 pb-40 -bottom-[60%] md:-bottom-[110%] -right-28 opacity-40 lg:opacity-100">
+          <div className="absolute px-8 z-20 pb-40 -bottom-[30%] lg:-bottom-[80%] -right-28 opacity-20 lg:opacity-100">
             <Image
               src={bg1}
               alt="KTC - Road to Korea"
-              className="w-[300px] md:w-[500px]"
+              className="w-[300px] md:w-[400px]"
             />
           </div>
-          <div className="absolute px-8 z-20 pb-40 -bottom-[50%] md:-bottom-[80%] -left-8 opacity-40 lg:opacity-100">
+          <div className="absolute px-8 z-20 pb-40 -bottom-[20%] lg:-bottom-[60%] -left-8 opacity-20 lg:opacity-100">
             <Image
               src={bg2}
               alt="KTC - Road to Korea"
-              className="w-[200px] md:w-[300px]"
+              className="w-[200px] md:w-[250px]"
             />
           </div>
         </div>
