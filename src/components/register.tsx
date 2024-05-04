@@ -6,10 +6,10 @@ export default function Register() {
       <div className="relative z-10 container">
         <div className="max-w-lg space-y-3 px-4 sm:mx-auto sm:text-center sm:px-0">
           <h2 className="text-white text-3xl font-semibold sm:text-4xl">
-            Đăng ký ngay
+            Đăng ký tư vấn
           </h2>
         </div>
-        <div className="mt-12 mx-auto px-4 p-8 bg-white sm:max-w-lg sm:px-8 sm:rounded-xl">
+        <div className="mt-12 mx-auto px-4 p-8 bg-white sm:max-w-lg sm:px-8 rounded-xl">
           <RegisterForm />
         </div>
       </div>

@@ -24,8 +24,8 @@ export default function Benefits() {
       desc: (
         <p>
           Đạt mức lương ngang bằng với lập trình viên Hàn Quốc. Trung bình mỗi
-          tháng cho nhân sự ngành IT tại Hàn là từ 3,453,150 KRW - 8,371,053
-          KRW. Xem thêm thông tin{" "}
+          tháng cho nhân sự ngành IT tại Hàn là từ $2,544 - $6,169. Xem thêm
+          thông tin{" "}
           <Link
             href="https://www.paylab.com/kr/salaryinfo/information-technology"
             className="underline"
