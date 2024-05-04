@@ -32,9 +32,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4">
               <Button size="lg" className="w-full md:w-auto" asChild>
-                <Link href={site.registrationUrl} target="_blank">
-                  Đăng ký ngay
-                </Link>
+                <Link href={site.registrationUrl}>Đăng ký ngay</Link>
               </Button>
               <Button
                 variant="secondary"
