@@ -71,7 +71,7 @@ export default function RootLayout({
           {/* <KtcPopup /> */}
           <PhoneCall />
           <ThirdParties />
-          <Toaster />
+          <Toaster position="top-center" />
         </body>
       </html>
     </Providers>

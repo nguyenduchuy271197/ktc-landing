@@ -41,6 +41,8 @@ export default function RegisterForm() {
       toast.success("Cảm ơn bạn đã đăng ký!", {
         description: "Chúng tôi sẽ liên hệ với bạn sớm nhất!",
       });
+
+      form.reset();
     },
   });
 
