@@ -37,12 +37,7 @@ export default function Hero() {
                   />
                 </span>
 
-                <span
-                  className="flex items-center gap-2 justify-center flex-wrap bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 mt-2"
-                  style={{
-                    WebkitBackgroundClip: "text",
-                  }}
-                >
+                <span className="flex items-center gap-2 justify-center flex-wrap bg-clip-text text-orange-500 mt-2">
                   <span className="w-full lg:w-auto">
                     Lấy visa làm việc tại{" "}
                   </span>
