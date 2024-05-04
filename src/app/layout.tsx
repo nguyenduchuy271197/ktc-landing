@@ -62,7 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <Providers>
-      <html lang="en" suppressHydrationWarning>
+      <html lang="en" suppressHydrationWarning className="scroll-smooth">
         <body className={cn("antialiased ", fontSans.className)}>
           <Banner />
           <Navbar />
