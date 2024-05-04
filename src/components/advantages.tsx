@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import benefitSrc from "/public/benefits.jpg";
+import AnimationLayout from "./shared/animation-layout";
 
 export default function Advantages() {
   const features = [
@@ -34,47 +35,55 @@ export default function Advantages() {
   return (
     <section className="pt-6 md:pb-20">
       <div className="container">
-        <div className=" text-gray-600 gap-8 grid md:grid-cols-[3fr_2fr] overflow-hidden">
-          <div className="max-w-xl">
-            <div className="max-w-xl space-y-3">
-              <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                Chúng tôi có gì?
-              </h2>
-              <p>
-                Nhằm tạo cho học viên một môi trường học tập chuyên nghiệp, một
-                tinh thần thật tốt, chúng tôi mang đến một dự án với những điểm
-                mạnh như sau:
-              </p>
+        <AnimationLayout
+          className="duration-1000 delay-300"
+          isInviewState={{
+            trueState: "opacity-1",
+            falseState: "opacity-0",
+          }}
+        >
+          <div className=" text-gray-600 gap-8 grid md:grid-cols-[3fr_2fr] overflow-hidden">
+            <div className="max-w-xl">
+              <div className="max-w-xl space-y-3">
+                <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                  Chúng tôi có gì?
+                </h2>
+                <p>
+                  Nhằm tạo cho học viên một môi trường học tập chuyên nghiệp,
+                  một tinh thần thật tốt, chúng tôi mang đến một dự án với những
+                  điểm mạnh như sau:
+                </p>
+              </div>
+              <div className="mt-12 max-w-lg lg:max-w-none">
+                <ul className="space-y-8">
+                  {features.map((item, idx) => (
+                    <li key={idx} className="flex gap-x-4">
+                      <div className="flex-none w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center">
+                        {item.icon}
+                      </div>
+                      <div>
+                        <h4 className="text-lg text-gray-800 font-semibold">
+                          {item.title}
+                        </h4>
+                        <div className="mt-3">{item.desc}</div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <div className="mt-12 max-w-lg lg:max-w-none">
-              <ul className="space-y-8">
-                {features.map((item, idx) => (
-                  <li key={idx} className="flex gap-x-4">
-                    <div className="flex-none w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center">
-                      {item.icon}
-                    </div>
-                    <div>
-                      <h4 className="text-lg text-gray-800 font-semibold">
-                        {item.title}
-                      </h4>
-                      <div className="mt-3">{item.desc}</div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+            <div>
+              <div className="relative w-full h-full shadow-2xl">
+                <Image
+                  src={benefitSrc}
+                  alt="Benefits"
+                  className="object-cover rounded-lg"
+                  fill
+                />
+              </div>
             </div>
           </div>
-          <div>
-            <div className="relative w-full h-full shadow-2xl">
-              <Image
-                src={benefitSrc}
-                alt="Benefits"
-                className="object-cover rounded-lg"
-                fill
-              />
-            </div>
-          </div>
-        </div>
+        </AnimationLayout>
       </div>
     </section>
   );

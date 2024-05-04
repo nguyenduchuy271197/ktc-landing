@@ -1,5 +1,6 @@
 "use client";
 import { ReactNode, useRef, useState } from "react";
+import AnimationLayout from "./shared/animation-layout";
 
 interface FaqsCardProps {
   faqsList: {
@@ -144,22 +145,30 @@ export default function FAQ() {
 
   return (
     <section className="leading-relaxed sm:py-20 pt-14" id="faqs">
-      <div className="container">
-        <div className="space-y-3 text-center">
-          <h2 className="text-3xl text-gray-800 font-semibold">
-            Các câu hỏi thường gặp về dự án K-Tech College 2024
-          </h2>
-          <p className="text-gray-600 max-w-lg mx-auto text-lg">
-            Dưới đây là những câu hỏi phổ biến về các khóa đào tạo lập trình và
-            kết nối việc làm tại Hàn Quốc.
-          </p>
+      <AnimationLayout
+        className="duration-1000 delay-300"
+        isInviewState={{
+          trueState: "opacity-1",
+          falseState: "opacity-0 translate-y-12",
+        }}
+      >
+        <div className="container">
+          <div className="space-y-3 text-center">
+            <h2 className="text-3xl text-gray-800 font-semibold">
+              Các câu hỏi thường gặp về dự án K-Tech College 2024
+            </h2>
+            <p className="text-gray-600 max-w-lg mx-auto text-lg">
+              Dưới đây là những câu hỏi phổ biến về các khóa đào tạo lập trình
+              và kết nối việc làm tại Hàn Quốc.
+            </p>
+          </div>
+          <div className="mt-14 max-w-2xl mx-auto">
+            {faqsList.map((item, idx) => (
+              <FaqsCard key={idx} idx={idx} faqsList={item} />
+            ))}
+          </div>
         </div>
-        <div className="mt-14 max-w-2xl mx-auto">
-          {faqsList.map((item, idx) => (
-            <FaqsCard key={idx} idx={idx} faqsList={item} />
-          ))}
-        </div>
-      </div>
+      </AnimationLayout>
     </section>
   );
 }

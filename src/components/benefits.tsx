@@ -1,5 +1,7 @@
 import { CircleDollarSign, LandPlot, Laptop, Soup } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import AnimationLayout from "./shared/animation-layout";
 
 export default function Benefits() {
   const features = [
@@ -40,33 +42,44 @@ export default function Benefits() {
 
   return (
     <section className="py-14">
-      <div className="container text-gray-600">
-        <div className="max-w-2xl mx-auto md:text-center text-left">
-          <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-            Lợi ích khi tham gia dự án
-          </h2>
-          <p className="mt-3">
-            Với dự án K-Tech College, chúng tôi mang đến cho bạn không chỉ là
-            một khóa học, mà còn là cơ hội và tương lai thể hiện qua các lợi ích
-            như sau:
-          </p>
+      <AnimationLayout
+        className="duration-1000 delay-300"
+        isInviewState={{
+          trueState: "opacity-1",
+          falseState: "opacity-0 translate-y-12",
+        }}
+      >
+        <div className="container text-gray-600">
+          <div className="max-w-2xl mx-auto md:text-center text-left">
+            <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+              Lợi ích khi tham gia dự án
+            </h2>
+            <p className="mt-3">
+              Với dự án K-Tech College, chúng tôi mang đến cho bạn không chỉ là
+              một khóa học, mà còn là cơ hội và tương lai thể hiện qua các lợi
+              ích như sau:
+            </p>
+          </div>
+          <div className="mt-12">
+            <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-2">
+              {features.map((item, idx) => (
+                <li
+                  key={idx}
+                  className="space-y-3 p-6 rounded-md bg-orange-100"
+                >
+                  <div className="flex-none w-12 h-12 bg-orange-400 rounded-lg flex items-center justify-center border text-white">
+                    {item.icon}
+                  </div>
+                  <h4 className="md:text-xl text-lg text-gray-800 font-semibold">
+                    {item.title}
+                  </h4>
+                  <div>{item.desc}</div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div className="mt-12">
-          <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-2">
-            {features.map((item, idx) => (
-              <li key={idx} className="space-y-3 p-6 rounded-md bg-orange-100">
-                <div className="flex-none w-12 h-12 bg-orange-400 rounded-lg flex items-center justify-center border text-white">
-                  {item.icon}
-                </div>
-                <h4 className="md:text-xl text-lg text-gray-800 font-semibold">
-                  {item.title}
-                </h4>
-                <div>{item.desc}</div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+      </AnimationLayout>
     </section>
   );
 }
