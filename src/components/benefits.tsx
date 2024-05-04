@@ -1,17 +1,4 @@
-import {
-  BookCheck,
-  BriefcaseBusiness,
-  CircleDollarSign,
-  Handshake,
-  LandPlot,
-  Laptop,
-  MountainSnow,
-  Play,
-  Soup,
-  TrendingUp,
-} from "lucide-react";
-import Image from "next/image";
-import benefitSrc from "/public/benefits.jpg";
+import { CircleDollarSign, LandPlot, Laptop, Soup } from "lucide-react";
 import Link from "next/link";
 
 export default function Benefits() {
