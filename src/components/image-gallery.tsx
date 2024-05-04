@@ -18,7 +18,7 @@ export default function ImageGallery() {
     ],
   ];
   return (
-    <div className="pb-20 rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="pb-14 rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       {imageGroups.map((images, idx) => (
         <InfiniteMovingCards
           key={idx}

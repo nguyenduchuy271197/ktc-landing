@@ -11,18 +11,22 @@ import Process from "@/components/process";
 import Banner from "@/components/banner";
 import Programs from "@/components/programs";
 import Slogan from "@/components/slogan";
+import Register from "@/components/register";
+import Advantages from "@/components/advantages";
 
 export default function Page() {
   return (
     <div>
       <Hero />
       {/* <LogoGrid /> */}
-      <AboutUs />
-      <Slogan />
       <Benefits />
+      <Advantages />
+      <Slogan />
+      <AboutUs />
       <Programs />
       <Process />
       <ImageGallery />
+      <Register />
       <FAQ />
       <CTA />
       <Contact />

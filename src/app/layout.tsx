@@ -5,8 +5,10 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { cn } from "@/lib/utils";
 import Banner from "@/components/banner";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import Script from "next/script";
+import ThirdParties from "@/components/third-parties";
+import PhoneCall from "@/components/shared/phone-call";
+import Providers from "@/components/providers";
+import { Toaster } from "@/components/ui/sonner";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -59,27 +61,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={cn("antialiased ", fontSans.className)}>
-        <Banner />
-        <Navbar />
-        {children}
-        <Footer />
-        <GoogleAnalytics gaId="G-029L97QDMN" />
-        <Script
-          id="hotjar-heatmap"
-          dangerouslySetInnerHTML={{
-            __html: `(function(h,o,t,j,a,r){
-              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-              h._hjSettings={hjid:4962457,hjsv:6};
-              a=o.getElementsByTagName('head')[0];
-              r=o.createElement('script');r.async=1;
-              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-              a.appendChild(r);
-          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
-          }}
-        />
-      </body>
-    </html>
+    <Providers>
+      <html lang="en" suppressHydrationWarning className="scroll-smooth">
+        <body className={cn("antialiased ", fontSans.className)}>
+          <Banner />
+          <Navbar />
+          {children}
+          <Footer />
+          {/* <KtcPopup /> */}
+          <PhoneCall />
+          <ThirdParties />
+          <Toaster position="top-center" />
+        </body>
+      </html>
+    </Providers>
   );
 }

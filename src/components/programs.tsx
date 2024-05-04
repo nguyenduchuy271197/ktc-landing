@@ -86,13 +86,13 @@ export default function Programs() {
         <div className="py-20">
           <div className="space-y-3 text-center">
             <h2 className="text-3xl font-semibold">Chương trình đào tạo</h2>
-            {/* <p className="max-w-lg mx-auto text-lg">
-              Chương trình đào tạo có thể sẽ thay đổi tùy theo năng lực chuyên
-              ngành software thực tế của các ứng viên được chọn.
-            </p> */}
           </div>
 
           <div className="mt-12">
+            <p className="text-orange-300 mb-2">
+              *Ứng viên ngoài khu vực TPHCM cũng có thể đăng ký học theo lộ
+              trình online
+            </p>
             <Table>
               <TableHeader>
                 <TableRow>
@@ -126,9 +126,7 @@ export default function Programs() {
 
           <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4 mt-12">
             <Button size="lg" className="w-full md:w-auto" asChild>
-              <Link href={site.registrationUrl} target="_blank">
-                Đăng ký ngay
-              </Link>
+              <Link href={site.registrationUrl}>Đăng ký ngay</Link>
             </Button>
             <Button
               variant="secondary"

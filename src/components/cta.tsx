@@ -8,7 +8,7 @@ import { site } from "@/config/site";
 
 export default function CTA() {
   return (
-    <section className="py-12">
+    <section className="pt-14">
       <div className="container">
         <div className="relative px-4 sm:px-8 py-8 sm:py-12 overflow-hidden md:px-8 rounded-3xl bg-[#101416]">
           <Image
@@ -39,9 +39,7 @@ export default function CTA() {
             </div>
             <div className="items-center justify-center gap-3 mt-4 sm:flex">
               <Button size="lg" className="w-full sm:w-auto" asChild>
-                <Link href={site.registrationUrl} target="_blank">
-                  Đăng ký ngay
-                </Link>
+                <Link href={site.registrationUrl}>Đăng ký ngay</Link>
               </Button>
             </div>
           </div>
