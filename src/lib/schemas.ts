@@ -9,7 +9,10 @@ const nameRegex = new RegExp(
 );
 
 export const registerFormSchema = z.object({
-  name: z.string().min(2).regex(nameRegex, "Tên không được phép ghi số!"),
+  name: z
+    .string()
+    .min(2, { message: "Họ và tên phải chứa ít nhất 2 chữ cái!" })
+    .regex(nameRegex, "Tên không được phép ghi số!"),
   email: z
     .string()
     .min(2, { message: "Địa chỉ email không hợp lệ!" })
