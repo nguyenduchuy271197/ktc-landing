@@ -11,6 +11,7 @@ import Process from "@/components/process";
 import Banner from "@/components/banner";
 import Programs from "@/components/programs";
 import Slogan from "@/components/slogan";
+import Register from "@/components/register";
 
 export default function Page() {
   return (
@@ -23,6 +24,7 @@ export default function Page() {
       <Programs />
       <Process />
       <ImageGallery />
+      <Register />
       <FAQ />
       <CTA />
       <Contact />

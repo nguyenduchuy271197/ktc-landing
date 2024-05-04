@@ -7,6 +7,8 @@ import { cn } from "@/lib/utils";
 import Banner from "@/components/banner";
 import ThirdParties from "@/components/third-parties";
 import PhoneCall from "@/components/shared/phone-call";
+import Providers from "@/components/providers";
+import { Toaster } from "@/components/ui/sonner";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -59,16 +61,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={cn("antialiased ", fontSans.className)}>
-        <Banner />
-        <Navbar />
-        {children}
-        <Footer />
-        {/* <KtcPopup /> */}
-        <PhoneCall />
-        <ThirdParties />
-      </body>
-    </html>
+    <Providers>
+      <html lang="en" suppressHydrationWarning>
+        <body className={cn("antialiased ", fontSans.className)}>
+          <Banner />
+          <Navbar />
+          {children}
+          <Footer />
+          {/* <KtcPopup /> */}
+          <PhoneCall />
+          <ThirdParties />
+          <Toaster />
+        </body>
+      </html>
+    </Providers>
   );
 }
