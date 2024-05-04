@@ -3,8 +3,11 @@ import {
   BriefcaseBusiness,
   CircleDollarSign,
   Handshake,
+  LandPlot,
+  Laptop,
   MountainSnow,
   Play,
+  Soup,
   TrendingUp,
 } from "lucide-react";
 import Image from "next/image";
@@ -14,32 +17,18 @@ import Link from "next/link";
 export default function Benefits() {
   const features = [
     {
-      icon: <BookCheck className="size-6" strokeWidth={1.5} />,
-      title: "Được cấp VISA Hàn Quốc",
-      desc: "Nhân sự hoàn thành chương trình đào tạo và nhận offer từ công ty Hàn Quốc sẽ được Bộ Ngoại Giao Hàn Quốc cấp VISA làm việc tại Hàn Quốc",
-    },
-    {
-      icon: <MountainSnow className="size-6" strokeWidth={1.5} />,
-      title: "Trải nghiệm cuộc sống tại Hàn",
-      desc: "Sống ở đất nước khác giúp bạn có trải nghiệm đa chiều về văn hoá, góc nhìn cởi mở và vững vàng hơn",
-    },
-    {
-      icon: <TrendingUp className="size-6" strokeWidth={1.5} />,
-      title: "Nâng cấp profile",
-      desc: "CV có kinh nghiệm làm việc ở nước ngoài là điểm thu hút với các Nhà tuyển dụng Việt Nam và Quốc tế",
-    },
-    {
-      icon: <BriefcaseBusiness className="size-6" strokeWidth={1.5} />,
-      title: "Làm việc tại Hàn Quốc",
-      desc: "Đây là cơ hội để các bạn học hỏi kinh nghiệm từ đất nước dẫn đầu về công nghệ và CNTT",
+      icon: <LandPlot className="size-6" strokeWidth={1.5} />,
+      title: "Được cấp làm việc tại VISA Hàn Quốc",
+      desc: "Nhân sự hoàn thành chương trình đào tạo và nhận offer từ công ty Hàn Quốc sẽ được Bộ Ngoại Giao Hàn Quốc cấp VISA để làm việc tại Hàn Quốc.",
     },
     {
       icon: <CircleDollarSign className="size-6" strokeWidth={1.5} />,
       title: "Tăng thu nhập cá nhân",
       desc: (
         <p>
-          Mức lương trung bình mỗi tháng cho nhân sự ngành IT tại Hàn là từ
-          2,506 USD - 6,075 USD. Xem thêm thông tin{" "}
+          Đạt mức lương ngang bằng với lập trình viên Hàn Quốc. Trung bình mỗi
+          tháng cho nhân sự ngành IT tại Hàn là từ 3,453,150 KRW - 8,371,053
+          KRW. Xem thêm thông tin{" "}
           <Link
             href="https://www.paylab.com/kr/salaryinfo/information-technology"
             className="underline"
@@ -51,9 +40,14 @@ export default function Benefits() {
       ),
     },
     {
-      icon: <Handshake className="size-6" strokeWidth={1.5} />,
-      title: "Xây dựng mối quan hệ hợp tác",
-      desc: "Kết nối với các đồng nghiệp, bạn bè Việt/ Hàn cùng mục tiêu để giúp đỡ nhau trong tương lai.",
+      icon: <Laptop className="size-6" strokeWidth={1.5} />,
+      title: "Hỗ trợ cho mượn laptop và Monitor",
+      desc: "Ứng viên được hỗ trợ cho mượn laptop trong suốt quá trình học (tùy theo nhu cầu), nhằm đảm bảo việc học không bị gián đoạn và thực hành hiệu quả",
+    },
+    {
+      icon: <Soup className="size-6" strokeWidth={1.5} />,
+      title: "Miễn phí 100% chi phí, bao gồm ăn trưa",
+      desc: "Ứng viên tham gia dự án được miễn phí toàn bộ chi phí đào tạo, kết nối việc làm. Ứng viên học fulltime được hỗ trợ cơm trưa và chỗ nghỉ ngơi.",
     },
   ];
 
