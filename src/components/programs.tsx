@@ -93,35 +93,37 @@ export default function Programs() {
               *Ứng viên ngoài khu vực TPHCM cũng có thể đăng ký học theo lộ
               trình online
             </p>
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead className="w-28"></TableHead>
-                  <TableHead className="text-center text-white w-80">
-                    Lớp Cao Cấp
-                  </TableHead>
-                  <TableHead className="text-center text-white w-80">
-                    Lớp Trung Cấp
-                  </TableHead>
-                  <TableHead className="text-center text-white w-80">
-                    Lớp Sơ Cấp
-                  </TableHead>
-                </TableRow>
-              </TableHeader>
-
-              <TableBody>
-                {tableContent.map((content, idx) => (
-                  <TableRow key={idx} className={cn("[&_li]:list-disc")}>
-                    <TableCell className="font-medium text-center">
-                      {content.sidebar}
-                    </TableCell>
-                    <TableCell>{content.lv1}</TableCell>
-                    <TableCell className="">{content.lv2}</TableCell>
-                    <TableCell>{content.lv3}</TableCell>
+            <div className="[mask-image:linear-gradient(to_left,transparent,white_20%,white_100%,transparent)] md:[mask-image:none]">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="w-28"></TableHead>
+                    <TableHead className="text-center text-white w-80">
+                      Lớp Cao Cấp
+                    </TableHead>
+                    <TableHead className="text-center text-white w-80">
+                      Lớp Trung Cấp
+                    </TableHead>
+                    <TableHead className="text-center text-white w-80">
+                      Lớp Sơ Cấp
+                    </TableHead>
                   </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+                </TableHeader>
+
+                <TableBody>
+                  {tableContent.map((content, idx) => (
+                    <TableRow key={idx} className={cn("[&_li]:list-disc")}>
+                      <TableCell className="font-medium text-center">
+                        {content.sidebar}
+                      </TableCell>
+                      <TableCell>{content.lv1}</TableCell>
+                      <TableCell className="">{content.lv2}</TableCell>
+                      <TableCell>{content.lv3}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4 mt-12">
