@@ -121,10 +121,9 @@ export default function FAQ() {
           </p>
           <p>
             Tuy nhiên để đảm bảo học viên nghiêm túc tham gia và hoàn thành lộ
-            trình dự án, chúng tôi sẽ yêu cầu học viên đóng phí bảo chứng
-            (5,000,000 đồng/người).
+            trình dự án, chúng tôi sẽ yêu cầu học viên ký kết hợp đồng nhằm cam
+            kết hoàn thành trọn vẹn lộ trình khóa học:
           </p>
-          <p>Phí bảo chứng sẽ được hoàn lại cho học viên khi:</p>
           <ul className="list-disc pl-4">
             <li className="">Đảm bảo tham gia trên 90% các buổi học.</li>
             <li>
@@ -138,6 +137,11 @@ export default function FAQ() {
               nhật hiện nay.
             </li>
           </ul>
+          <p>
+            Trường hợp học viên không hoàn thành những cam kết này theo nội dung
+            Hợp đồng, học viên có trách nhiệm bồi hoàn một khoản chi phí tổ chức
+            cho chúng tôi (có ghi rõ trong hợp đồng cam kết)
+          </p>
         </div>
       ),
     },
