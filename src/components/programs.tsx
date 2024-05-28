@@ -90,10 +90,10 @@ export default function Programs() {
           </div>
 
           <div className="mt-12">
-            <p className="text-orange-300 mb-2">
+            {/* <p className="text-orange-300 mb-2">
               *Ứng viên ngoài khu vực TPHCM cũng có thể đăng ký học theo lộ
               trình online
-            </p>
+            </p> */}
             <div className="[mask-image:linear-gradient(to_left,transparent,white_20%,white_100%,transparent)] md:[mask-image:none]">
               <Table>
                 <TableHeader>
