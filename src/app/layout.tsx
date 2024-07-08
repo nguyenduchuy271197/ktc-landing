@@ -9,6 +9,8 @@ import ThirdParties from "@/components/third-parties";
 import PhoneCall from "@/components/shared/phone-call";
 import Providers from "@/components/providers";
 import { Toaster } from "@/components/ui/sonner";
+import Popup from "@/components/shared/pop-up";
+import KtcPopup from "@/components/ktc-pop-up";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -64,6 +66,7 @@ export default function RootLayout({
     <Providers>
       <html lang="en" suppressHydrationWarning className="scroll-smooth">
         <body className={cn("antialiased pb-14 sm:pb-0", fontSans.className)}>
+          <KtcPopup />
           <Banner />
           <Navbar />
           {children}
