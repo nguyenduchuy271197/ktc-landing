@@ -40,7 +40,7 @@ export default function CTA() {
             </div>
             <div className="items-center justify-center gap-3 mt-4 sm:flex">
               <Button size="lg" className="w-full sm:w-auto" asChild>
-                <Link href={site.registrationUrl}>Đăng ký ngay</Link>
+                <Link href={site.registrationUrl}>Ứng tuyển ngay</Link>
               </Button>
             </div>
           </div>

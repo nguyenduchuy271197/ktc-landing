@@ -98,14 +98,16 @@ const text = [
     description: (
       <div>
         <p>
-          Đào tạo kỹ năng thực chiến cho nhân lực Software Việt Nam có triển
-          vọng và kết nối việc làm cho họ tới các công ty tại Hàn Quốc, nhằm góp
-          phần giảm bớt tình trạng thiếu nhân lực cho các Start-up Hàn Quốc.
+          <b>K-Tech College 2024</b> là chương trình đặc biệt, cung cấp cho các
+          lập trình viên các{" "}
+          <b>kỹ năng cần thiết, hiểu rõ về văn hóa làm việc</b> tại Hàn Quốc và
+          <b>tạo điều kiện để bạn tìm được công việc mong muốn tại Hàn Quốc.</b>
         </p>
         <p>
-          Mang đến cơ hội việc làm, thúc đẩy phát triển tài năng cho các nhân
-          lực ngành CNTT chất lượng cao ở Việt Nam với nguồn tài trợ 100% học
-          phí từ Chính phủ Hàn Quốc.
+          K-Tech College 2024 đóng vai trò là cầu nối{" "}
+          <b>việc làm tại Hàn Quốc</b> cho các lập trình viên chất lượng cao ở
+          Việt Nam <b>hoàn toàn miễn phí</b>, với nguồn tài trợ{" "}
+          <b>100% từ Chính phủ Hàn Quốc.</b>
         </p>
       </div>
     ),

@@ -7,13 +7,13 @@ export default function Benefits() {
   const features = [
     {
       icon: <Soup className="size-6" strokeWidth={1.5} />,
-      title: "Miễn phí 100% chi phí, bao gồm ăn trưa",
-      desc: "Ứng viên tham gia dự án được miễn phí toàn bộ chi phí đào tạo, kết nối việc làm. Ứng viên học fulltime được hỗ trợ cơm trưa và chỗ nghỉ ngơi.",
+      title: "Đào tạo kiến thức và kỹ năng cần thiết",
+      desc: "Ứng viên tham gia chương trình sẽ được đào tạo tiếng Hàn từ cơ bản đến giao tiếp trong công việc. Trang bị kiến thức, kỹ năng cần thiết để làm việc tại Hàn Quốc",
     },
     {
       icon: <Laptop className="size-6" strokeWidth={1.5} />,
-      title: "Hỗ trợ cho mượn laptop và màn hình",
-      desc: "Ứng viên được hỗ trợ cho mượn laptop trong suốt quá trình học (tùy theo nhu cầu), nhằm đảm bảo việc học không bị gián đoạn và thực hành hiệu quả",
+      title: "Phát triển sự nghiệp toàn diện",
+      desc: "Nâng cao kỹ năng chuyên môn, mở rộng mạng lưới, tham gia những dự án lớn tại các công ty công nghệ tại quốc gia có nền kinh tế top 10 thế giới.",
     },
     {
       icon: <LandPlot className="size-6" strokeWidth={1.5} />,
@@ -52,12 +52,10 @@ export default function Benefits() {
         <div className="container text-gray-600">
           <div className="max-w-2xl mx-auto md:text-center text-left">
             <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-              Lợi ích khi tham gia dự án
+              Quyền lợi ứng viên
             </h2>
             <p className="mt-3">
-              Với dự án K-Tech College, chúng tôi mang đến cho bạn không chỉ là
-              một khóa học, mà còn là cơ hội và tương lai thể hiện qua các lợi
-              ích như sau:
+              Ứng tuyển tham gia K-Tech College 2024, bạn sẽ được:
             </p>
           </div>
           <div className="mt-12">

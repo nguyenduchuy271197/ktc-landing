@@ -18,13 +18,13 @@ const renderer = ({
 }) => {
   if (completed) {
     // Render a completed state
-    return <div>Thời gian tuyển sinh đã kết thúc</div>;
+    return <div>Thời gian ứng tuyển đã kết thúc</div>;
   } else {
     // Render a countdown
     return (
       <div className="flex items-center justify-center gap-4">
         <p className="font-medium text-xs sm:text-sm md:text-base text-balance">
-          Thời gian tuyển sinh dự kiến sẽ kết thúc sau
+          Hạn cuối ứng tuyển:
         </p>
         <div className="flex items-center gap-1 font-bold">
           <div className="w-8 sm:w-10 py-1 rounded-md bg-indigo-100 text-orange-700 flex flex-col items-center leading-none">
@@ -60,6 +60,6 @@ export default function RecruitmentCountdown() {
   }, []);
 
   return (
-    isLoaded && <Countdown date={new Date(2024, 4, 15)} renderer={renderer} />
+    isLoaded && <Countdown date={new Date(2024, 7, 31)} renderer={renderer} />
   );
 }

@@ -19,11 +19,11 @@ export default function Page() {
     <div>
       <Hero />
       {/* <LogoGrid /> */}
+      <AboutUs />
       <Benefits />
       <Advantages />
       <Slogan />
-      <AboutUs />
-      <Programs />
+      {/* <Programs /> */}
       <Process />
       <ImageGallery />
       <Register />
