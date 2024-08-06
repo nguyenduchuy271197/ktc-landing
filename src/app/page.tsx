@@ -23,7 +23,7 @@ export default function Page() {
       <Benefits />
       <Advantages />
       <Slogan />
-      {/* <Programs /> */}
+      <Programs />
       <Process />
       <ImageGallery />
       <Register />
