@@ -33,7 +33,7 @@ export default function Advantages() {
   ];
 
   return (
-    <section className="pt-6 md:pb-20">
+    <section className="pt-6 lg:pt-24 md:pb-20">
       <div className="container">
         <AnimationLayout
           className="duration-1000 delay-300"

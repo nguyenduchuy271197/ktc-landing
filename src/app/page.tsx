@@ -14,6 +14,7 @@ import Slogan from "@/components/slogan";
 import Register from "@/components/register";
 import Advantages from "@/components/advantages";
 import Target from "@/components/target";
+import TrainingProgram from "@/components/training-program";
 
 export default function Page() {
   return (
@@ -25,7 +26,8 @@ export default function Page() {
       <Target />
       <Advantages />
       <Slogan />
-      <Programs />
+      <TrainingProgram />
+      {/* <Programs /> */}
       <Process />
       <ImageGallery />
       <Register />
