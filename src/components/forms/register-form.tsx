@@ -65,6 +65,7 @@ export default function RegisterForm() {
 
   async function onSubmit(values: IRegisterForm) {
     const { cv_file, ...restData } = values;
+    console.log(restData);
     const selectedFiles = new Array(cv_file);
     const result = await startUpload(selectedFiles);
     if (result) {
@@ -173,7 +174,7 @@ export default function RegisterForm() {
                 <FormControl>
                   <Checkbox
                     checked={field.value}
-                    onCheckedChange={(checked) => {
+                    onCheckedChange={(checked: boolean) => {
                       field.onChange(checked);
                     }}
                   />

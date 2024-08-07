@@ -11,13 +11,15 @@ export async function POST(request: Request) {
       status: 400,
     });
 
+  console.log(registerValidator.data);
+
   try {
     await doc.loadInfo();
-    const sheet = doc.sheetsByTitle["Danh sách đăng ký"];
+    const sheet = doc.sheetsById[0];
     await sheet.addRow(registerValidator.data);
     return Response.json("OK");
   } catch (error: any) {
-    console.log(error);
+    console.log(error.message);
     return Response.json("Something went wrong", {
       status: 500,
     });

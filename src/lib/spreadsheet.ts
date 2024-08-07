@@ -8,6 +8,6 @@ const serviceAccountAuth = new JWT({
 });
 
 export const doc = new GoogleSpreadsheet(
-  "1HJYOtzKbpHfwpNO-OEpCM84XXI7uwPS-ahrYkDO36-Y",
+  "1OTRHq600tU17mxKVdRSS6LrsJNxXKTJcf1EOWYZYA6I",
   serviceAccountAuth
 );

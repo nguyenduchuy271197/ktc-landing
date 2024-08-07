@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav className="border-b border-orange-400/50 w-full md:relative md:text-sm md:border-none z-50 bg-[#101416]">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-6 md:block">
-          <Link href="#">
+          <Link href="/">
             <Image src={logo} alt="LIKELION" className="h-6 md:h-10 w-auto" />
           </Link>
           <div className="md:hidden">
@@ -70,9 +70,7 @@ export default function Navbar() {
             <div className="space-y-3 items-center gap-x-6 md:flex md:space-y-0">
               <li>
                 <Button size="sm" className="w-full md:w-auto" asChild>
-                  <Link href={site.registrationUrl}>
-                    Đăng ký ngay
-                  </Link>
+                  <Link href={site.registrationUrl}>Đăng ký ngay</Link>
                 </Button>
               </li>
             </div>

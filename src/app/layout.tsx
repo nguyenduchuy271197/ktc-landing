@@ -9,8 +9,11 @@ import ThirdParties from "@/components/third-parties";
 import PhoneCall from "@/components/shared/phone-call";
 import Providers from "@/components/providers";
 import { Toaster } from "@/components/ui/sonner";
-import Popup from "@/components/shared/pop-up";
 import KtcPopup from "@/components/ktc-pop-up";
+import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
+import { extractRouterConfig } from "uploadthing/server";
+
+import { ourFileRouter } from "@/app/api/uploadthing/core";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -66,6 +69,7 @@ export default function RootLayout({
     <Providers>
       <html lang="en" suppressHydrationWarning className="scroll-smooth">
         <body className={cn("antialiased pb-14 sm:pb-0", fontSans.className)}>
+          <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
           <KtcPopup />
           <Banner />
           <Navbar />
