@@ -43,7 +43,7 @@ export default function CVDropzone({
                 <FileCheck className={cn("size-6", file && "text-success")} />
               </div>
               <div className="text-left">
-                <p>{file.name}</p>
+                <p className="max-w-[220px] break-words">{file.name}</p>
                 <p className={cn(file && "text-success")}>
                   CV tải lên thành công
                 </p>
