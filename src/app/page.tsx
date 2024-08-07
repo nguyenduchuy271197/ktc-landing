@@ -13,6 +13,7 @@ import Programs from "@/components/programs";
 import Slogan from "@/components/slogan";
 import Register from "@/components/register";
 import Advantages from "@/components/advantages";
+import Target from "@/components/target";
 
 export default function Page() {
   return (
@@ -21,6 +22,7 @@ export default function Page() {
       {/* <LogoGrid /> */}
       <AboutUs />
       <Benefits />
+      <Target />
       <Advantages />
       <Slogan />
       <Programs />

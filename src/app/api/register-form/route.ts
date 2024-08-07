@@ -1,10 +1,10 @@
-import { registerFormSchema } from "@/lib/schemas";
+import { registerPostSchema } from "@/lib/schemas";
 import { doc } from "@/lib/spreadsheet";
 
-export async function POST(request: Request, response: Response) {
+export async function POST(request: Request) {
   const data = await request.json();
 
-  const registerValidator = registerFormSchema.safeParse(data);
+  const registerValidator = registerPostSchema.safeParse(data);
 
   if (!registerValidator.success)
     return Response.json("Invalid data", {
@@ -13,11 +13,11 @@ export async function POST(request: Request, response: Response) {
 
   try {
     await doc.loadInfo();
-    const sheet = doc.sheetsByTitle["Người đăng ký tư vấn"];
+    const sheet = doc.sheetsByTitle["Danh sách đăng ký"];
     await sheet.addRow(registerValidator.data);
     return Response.json("OK");
   } catch (error: any) {
-    console.log(error.message);
+    console.log(error);
     return Response.json("Something went wrong", {
       status: 500,
     });
