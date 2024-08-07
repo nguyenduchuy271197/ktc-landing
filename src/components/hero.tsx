@@ -28,13 +28,9 @@ export default function Hero() {
               </div>
               <h1 className="mx-auto text-2xl sm:text-4xl font-bold lg:text-5xl max-w-sm sm:max-w-md md:max-w-none uppercase">
                 <span className="flex items-center justify-center gap-2 flex-wrap">
-                  <span className="w-full lg:w-auto">Đào tạo lập trình</span>
-                  <Image
-                    src={free}
-                    alt="free"
-                    className="h-20 md:h-24 w-auto"
-                    priority
-                  />
+                  <span className="w-full lg:w-auto">
+                    Tuyển dụng lập trình viên có kinh nghiệm
+                  </span>
                 </span>
 
                 <span className="flex items-center gap-2 justify-center flex-wrap bg-clip-text text-orange-500 mt-2">
@@ -50,8 +46,9 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="max-w-2xl mx-auto md:text-balance lg:text-lg">
-                Tuyển sinh và đào tạo những tài năng CNTT chất lượng cao của
-                Việt Nam đến làm việc tại các công ty Start-up tại Hàn Quốc
+                Tuyển dụng và đào tạo những tài năng CNTT chất lượng cao của
+                Việt Nam Việt Nam đến làm việc tại các công ty công nghệ tại Hàn
+                Quốc
               </p>
               <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4">
                 <Button size="lg" className="w-full md:w-auto" asChild>
