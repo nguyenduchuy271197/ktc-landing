@@ -1,6 +1,7 @@
-import { CircleDollarSign, LandPlot, Laptop, Soup } from "lucide-react";
+// import { CircleDollarSign, LandPlot, Laptop, Soup } from "lucide-react";
 import Link from "next/link";
-import AnimationLayout from "./shared/animation-layout";
+import { site } from "@/config/site";
+import { Button } from "./ui/button";
 
 export default function Target() {
   const features = [
@@ -17,7 +18,7 @@ export default function Target() {
     {
       //   icon: <LandPlot className="size-6" strokeWidth={1.5} />,
       title: "Kỹ năng chuyên môn",
-      desc: "Sở hữu các kỹ năng chuyên môn của lập trình viên Front End hoặc Back End",
+      desc: "Sở hữu các kỹ năng chuyên môn của lập trình viên Front-End hoặc Back-End",
     },
     {
       //   icon: <CircleDollarSign className="size-6" strokeWidth={1.5} />,
@@ -52,6 +53,12 @@ export default function Target() {
               </li>
             ))}
           </ul>
+
+          <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4 mt-12">
+            <Button size="lg" className="w-full md:w-auto" asChild>
+              <Link href={site.registrationUrl}>Đăng ký ngay</Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
