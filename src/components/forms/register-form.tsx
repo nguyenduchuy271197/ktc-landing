@@ -205,7 +205,7 @@ export default function RegisterForm() {
             ? "Vui lòng đợi trong giây lát.. "
             : isPending
             ? "Dữ liệu đang được xử lí..."
-            : "Đăng ký ngay"}
+            : "Ứng tuyển ngay"}
         </Button>
       </form>
     </Form>

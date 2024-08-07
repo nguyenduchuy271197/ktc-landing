@@ -50,19 +50,13 @@ export default function Hero() {
                 Việt Nam Việt Nam đến làm việc tại các công ty công nghệ tại Hàn
                 Quốc
               </p>
+
+              <p className="text-orange-500 font-semibold">MIỄN PHÍ THAM GIA</p>
+
+              <span>Hạn cuối ứng tuyển: Thứ Bảy - 31/08/2024</span>
               <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4">
                 <Button size="lg" className="w-full md:w-auto" asChild>
                   <Link href={site.registrationUrl}>Ứng tuyển ngay</Link>
-                </Button>
-                <Button
-                  variant="secondary"
-                  size="lg"
-                  className="w-full md:w-auto"
-                  asChild
-                >
-                  <Link href={site.informationUrl} target="_blank">
-                    Miễn phí tham gia
-                  </Link>
                 </Button>
               </div>
             </div>

@@ -24,9 +24,9 @@ export default function Page() {
       <AboutUs />
       <Benefits />
       <Target />
-      <Advantages />
-      <Slogan />
       <TrainingProgram />
+      {/* <Advantages /> */}
+      <Slogan />
       {/* <Programs /> */}
       <Process />
       <ImageGallery />

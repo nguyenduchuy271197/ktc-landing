@@ -23,7 +23,7 @@ export default function TrainingProgram() {
             </div>
             <Table className="bg-neutral-50">
               <TableBody>
-                <TableRow>
+                {/* <TableRow>
                   <TableCell className="font-medium">
                     Đối tượng tham gia
                   </TableCell>
@@ -31,7 +31,7 @@ export default function TrainingProgram() {
                     Lập trình viên đã có kinh nghiệm thực tế, mong muốn làm việc
                     tại Hàn Quốc
                   </TableCell>
-                </TableRow>
+                </TableRow> */}
 
                 <TableRow>
                   <TableCell className="font-medium">Thời lượng</TableCell>
@@ -40,7 +40,7 @@ export default function TrainingProgram() {
 
                 <TableRow>
                   <TableCell className="font-medium">Hình thức</TableCell>
-                  <TableCell>Part-time</TableCell>
+                  <TableCell>Bán thời gian (4 tiếng / 2 buổi / tuần)</TableCell>
                 </TableRow>
 
                 <TableRow>

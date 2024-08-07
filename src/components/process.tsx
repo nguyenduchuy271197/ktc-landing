@@ -2,56 +2,56 @@ import AnimationLayout from "./shared/animation-layout";
 
 const steps = [
   {
-    time: "22/04/2024 - 15/05/2024",
-    title: "Ứng tuyển",
-    description:
-      "Ứng viên gửi Hồ sơ ứng tuyển về LIKELION trước hạn chót đăng ký",
+    // time: "22/04/2024 - 15/05/2024",
+    title: "Nộp đơn ứng tuyển",
+    description: "Ứng viên điền mẫu ứng tuyển trước hạn chót đăng ký",
   },
   {
-    time: "16/05/2024 - 20/05/2024",
+    // time: "16/05/2024 - 20/05/2024",
     title: "Xét duyệt hồ sơ",
-    description: "Bộ phận thẩm định tiến hành chọn lọc các ứng viên phù hợp",
+    description: "Chọn lọc các hồ sơ phù hợp với yêu cầu chương trình",
   },
   {
-    time: "21/05/2024",
-    title: "Kết quả tuyển chọn",
-    description:
-      "Sau khi vượt qua 3 vòng đánh giá, ứng viên sẽ được xếp vào cấp lớp phù hợp",
+    // time: "21/05/2024",
+    title: "Kiểm tra năng lực (Online)",
+    description: "Làm bài kiểm tra kiến thức và năng lực chuyên môn",
   },
   {
-    time: "22/05/2024 - 24/05/2024",
-    title: "Kiểm tra năng lực SW",
-    description: "Ứng viên làm bài kiểm tra kiến thức và năng lực chuyên môn",
-  },
-  {
-    time: "27/05/2024 - 31/05/2024",
+    // time: "22/05/2024 - 24/05/2024",
     title: "Phỏng vấn đầu vào",
     description:
-      "Ứng viên trình bày động lực và thuyết phục Ủy ban phỏng vấn bao gồm: quản lý của doanh nghiệp, lập trình viên chuyên nghiệp và chuyên viên đào tạo.",
+      "Tham gia phỏng vấn trực tiếp (offline) hoặc trực tuyến (online)",
   },
   {
-    time: "06/2024 - 11/2024",
+    // time: "27/05/2024 - 31/05/2024",
     title: "Đào tạo",
-    description: "Ứng viên trải qua 1-5 tháng đào tạo tuỳ vào cấp lớp",
+    description:
+      "Ứng viên trình bày động lực và thuyết phục Ủy ban phỏng vấn bao gồm: quản lý của doanh nghiệp, lập trình viên chuyên nghiệp và chuyên viên đào tạo.Tham gia đào lớp đào tạo tiếng Hàn cơ bản, tiếng Hàn giao tiếp & các kỹ năng khác trong vòng 4 tuần (2 buổi tối / tuần)",
   },
   {
-    time: "12/2024",
+    // time: "06/2024 - 11/2024",
     title: "Phỏng vấn đầu ra",
     description:
-      "Ứng viên trao đổi và thuyết phục Nhà tuyển dụng để lấy offer vị trí mình mong muốn",
+      "Phỏng vấn trực tiếp với các công ty công nghệ Hàn Quốc để tìm kiếm việc làm mong muốn",
   },
-  {
-    time: "2025",
-    title: "Cấp VISA đi Hàn",
-    description:
-      "Sau khi có kết quả đậu phỏng vấn, các ứng viên sẽ được cấp VISA làm việc tại Hàn",
-  },
-  {
-    time: "2025",
-    title: "Học hỏi và trải nghiệm",
-    description:
-      "Ứng viên sẽ được học hỏi và tích luỹ kinh nghiệm thực tế khi làm tại các Start-up Hàn",
-  },
+  // {
+  //   time: "12/2024",
+  //   title: "Phỏng vấn đầu ra",
+  //   description:
+  //     "Ứng viên trao đổi và thuyết phục Nhà tuyển dụng để lấy offer vị trí mình mong muốn",
+  // },
+  // {
+  //   time: "2025",
+  //   title: "Cấp VISA đi Hàn",
+  //   description:
+  //     "Sau khi có kết quả đậu phỏng vấn, các ứng viên sẽ được cấp VISA làm việc tại Hàn",
+  // },
+  // {
+  //   time: "2025",
+  //   title: "Học hỏi và trải nghiệm",
+  //   description:
+  //     "Ứng viên sẽ được học hỏi và tích luỹ kinh nghiệm thực tế khi làm tại các Start-up Hàn",
+  // },
 ];
 
 export default function Process() {
@@ -81,9 +81,9 @@ export default function Process() {
             {steps.map((step, idx) => (
               <div key={idx} className="relative pl-8 py-6 group">
                 <div className="flex flex-col items-start mb-1 group-last:before:hidden before:absolute before:left-2 before:h-full before:px-px before:bg-slate-300 before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 after:w-2 after:h-2 after:bg-orange-400 after:border-4 after:box-content after:border-slate-50 after:rounded-full after:-translate-x-1/2 after:translate-y-1.5">
-                  <time className="-left-2 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase px-2 h-6 mb-3 text-orange-600 bg-orange-100 rounded-full">
+                  {/* <time className="-left-2 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase px-2 h-6 mb-3 text-orange-600 bg-orange-100 rounded-full">
                     {step.time}
-                  </time>
+                  </time> */}
                   <div className="text-xl font-bold text-slate-900">
                     {step.title}
                   </div>
