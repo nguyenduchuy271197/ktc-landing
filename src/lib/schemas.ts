@@ -29,11 +29,6 @@ export const registerDataSchema = z.object({
     .min(10, "Số điện thoại phải có 10 chữ số!")
     .max(10, "Số điện thoại chỉ có 10 chữ số!")
     .regex(phoneRegex, "Số điện thoại chỉ có số!"),
-  status: z.enum(["Mới tốt nghiệp", "Đã đi làm"], {
-    errorMap: () => ({
-      message: "Vui lòng không bỏ trống thông tin",
-    }),
-  }),
   experience_years: z
     .number()
     .int()
