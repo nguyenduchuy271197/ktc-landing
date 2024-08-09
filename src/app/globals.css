@@ -91,7 +91,7 @@
   text-align: center;
   position: fixed;
   right: 1.5rem;
-  bottom: 10rem;
+  bottom: 7rem;
   z-index: 999;
   transition: 0.3s;
   -webkit-animation: hoverWave linear 1s infinite;

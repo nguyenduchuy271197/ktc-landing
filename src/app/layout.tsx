@@ -16,6 +16,7 @@ import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
 
 import { ourFileRouter } from "@/app/api/uploadthing/core";
+import MessengerChat from "@/components/messenger";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -77,6 +78,11 @@ export default function RootLayout({
           <Banner />
           <Navbar />
           {children}
+          <div className="fixed bottom-10 right-4 sm:bottom-8 sm:right-6 z-50">
+            <div className="flex flex-col gap-4">
+              <MessengerChat />
+            </div>
+          </div>
           <Footer />
           {/* <KtcPopup /> */}
           <PhoneCall />

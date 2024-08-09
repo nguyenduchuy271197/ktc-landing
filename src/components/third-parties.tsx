@@ -22,6 +22,7 @@ export default function ThirdParties() {
       />
 
       {/* <!-- Meta Pixel Code --> */}
+      {/* <!-- Meta Pixel Code --> */}
       <Script
         id="meta-pixel"
         strategy="afterInteractive"
@@ -43,7 +44,8 @@ export default function ThirdParties() {
           height={1}
           width={1}
           style={{ display: "none" }}
-          src="https://www.facebook.com/tr?id=865110215480975&ev=PageView&noscript=1"
+          src="https://www.facebook.com/tr?id=865110215480975&ev=PageView
+&noscript=1"
           alt="Meta Pixel"
         />
       </noscript>
@@ -87,7 +89,7 @@ export default function ThirdParties() {
         }}
       ></Script>
 
-      {/* Zalo */}
+      {/* Zalo
       <div
         className="zalo-chat-widget"
         data-oaid="2343115192114364602"
@@ -96,7 +98,7 @@ export default function ThirdParties() {
         data-width="350"
         data-height="420"
       ></div>
-      <Script src="https://sp.zalo.me/plugins/sdk.js"></Script>
+      <Script src="https://sp.zalo.me/plugins/sdk.js"></Script> */}
     </div>
   );
 }
