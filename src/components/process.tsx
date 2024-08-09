@@ -26,7 +26,7 @@ const steps = [
     // time: "27/05/2024 - 31/05/2024",
     title: "Đào tạo",
     description:
-      "Ứng viên trình bày động lực và thuyết phục Ủy ban phỏng vấn bao gồm: quản lý của doanh nghiệp, lập trình viên chuyên nghiệp và chuyên viên đào tạo.Tham gia đào lớp đào tạo tiếng Hàn cơ bản, tiếng Hàn giao tiếp & các kỹ năng khác trong vòng 4 tuần (2 buổi tối / tuần)",
+      "Tham gia đào lớp đào tạo tiếng Hàn cơ bản, tiếng Hàn giao tiếp & các kỹ năng khác trong vòng 4 tuần (2 buổi tối / tuần)",
   },
   {
     // time: "06/2024 - 11/2024",

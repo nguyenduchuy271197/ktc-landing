@@ -56,7 +56,9 @@ export default function Target() {
 
           <div className="flex flex-col md:flex-row items-center justify-center text-sm font-medium gap-x-3 gap-y-4 mt-12">
             <Button size="lg" className="w-full md:w-auto" asChild>
-              <Link href={site.registrationUrl}>Ứng tuyển ngay</Link>
+              <Link href={site.registrationUrl} target="_blank">
+                Ứng tuyển ngay
+              </Link>
             </Button>
           </div>
         </div>
