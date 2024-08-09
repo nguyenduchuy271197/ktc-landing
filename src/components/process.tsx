@@ -11,11 +11,11 @@ const steps = [
     title: "Xét duyệt hồ sơ",
     description: "Chọn lọc các hồ sơ phù hợp với yêu cầu chương trình",
   },
-  {
-    // time: "21/05/2024",
-    title: "Kiểm tra năng lực (Online)",
-    description: "Làm bài kiểm tra kiến thức và năng lực chuyên môn",
-  },
+  // {
+  //   // time: "21/05/2024",
+  //   title: "Kiểm tra năng lực (Online)",
+  //   description: "Làm bài kiểm tra kiến thức và năng lực chuyên môn",
+  // },
   {
     // time: "22/05/2024 - 24/05/2024",
     title: "Phỏng vấn đầu vào",
