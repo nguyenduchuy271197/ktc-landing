@@ -73,7 +73,7 @@ export default function RootLayout({
         <body className={cn("antialiased pb-14 sm:pb-0", fontSans.className)}>
           {/* <KtcPopup /> */}
           <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
-          <KtcPopup />
+          {/* <KtcPopup /> */}
           <Banner />
           <Navbar />
           {children}

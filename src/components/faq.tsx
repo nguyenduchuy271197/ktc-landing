@@ -113,37 +113,8 @@ export default function FAQ() {
       a: "Không yêu cầu, tuy nhiên có tiếng Anh cơ bản sẽ giúp bạn dễ dàng trao đổi công việc và thực hiện các sinh hoạt khác tại Hàn Quốc.",
     },
     {
-      q: "Chi phí học như thế nào?",
-      a: (
-        <div>
-          <p>
-            Học phí cho toàn bộ quá trình đào tạo và kết nối việc làm là 0 đồng.
-          </p>
-          <p>
-            Tuy nhiên để đảm bảo học viên nghiêm túc tham gia và hoàn thành lộ
-            trình dự án, chúng tôi sẽ yêu cầu học viên ký kết hợp đồng nhằm cam
-            kết hoàn thành trọn vẹn lộ trình khóa học:
-          </p>
-          <ul className="list-disc pl-4">
-            <li className="">Đảm bảo tham gia trên 90% các buổi học.</li>
-            <li>
-              Tham gia đầy đủ các sự kiện trong suốt quá trình học: Ideathon,
-              Kiểm tra giữa kỳ, Hackathon và hoàn thành dự án cuối khóa.
-            </li>
-            <li>
-              Tham gia đầy đủ các chương trình đào tạo bổ trợ: đào tạo tiếng Hàn
-              cơ bản, Hướng dẫn chuẩn bị hồ sơ phỏng vấn, Bài giảng về văn hóa
-              tại Doanh nghiệp Hàn Quốc, Bài giảng về kiến thức business cập
-              nhật hiện nay.
-            </li>
-          </ul>
-          <p>
-            Trường hợp học viên không hoàn thành những cam kết này theo nội dung
-            Hợp đồng, học viên có trách nhiệm bồi hoàn một khoản chi phí tổ chức
-            cho chúng tôi (có ghi rõ trong hợp đồng cam kết)
-          </p>
-        </div>
-      ),
+      q: "Ứng tuyển K-Tech College 2024 có mất phí không?",
+      a: "Ứng viên ứng tuyển K-Tech College 2024 hoàn toàn miễn phí. Chương trình cam kết không phát sinh thêm bất cứ chi phí nào khác trong suốt quá trình ứng tuyển.",
     },
   ];
 

@@ -30,7 +30,6 @@ export default function Page() {
       {/* <Programs /> */}
       <Process />
       <ImageGallery />
-      <Register />
       <FAQ />
       <CTA />
       <Contact />
