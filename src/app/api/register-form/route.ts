@@ -16,7 +16,10 @@ export async function POST(request: Request) {
   try {
     await doc.loadInfo();
     const sheet = doc.sheetsById[0];
-    await sheet.addRow(registerValidator.data);
+    await sheet.addRow({
+      ...registerValidator.data,
+      date: new Date().toISOString(),
+    });
     return Response.json("OK");
   } catch (error: any) {
     console.log(error.message);
