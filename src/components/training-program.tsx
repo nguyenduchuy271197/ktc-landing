@@ -53,8 +53,8 @@ export default function TrainingProgram() {
                     Nội dung đào tạo
                   </TableCell>
                   <TableCell>
-                    Đào tạo tiếng Hàn cơ bản và đi làm Đào tạo kỹ năng làm việc
-                    tại công ty Hàn Quốc
+                    <p>Đào tạo tiếng Hàn cơ bản và đi làm</p>
+                    <p>Đào tạo kỹ năng làm việc tại công ty Hàn Quốc</p>
                   </TableCell>
                 </TableRow>
               </TableBody>
