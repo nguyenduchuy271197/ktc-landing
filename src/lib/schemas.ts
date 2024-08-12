@@ -34,6 +34,7 @@ export const registerDataSchema = z.object({
     .int()
     .min(0, "Vui lòng nhập đúng số năm kinh nghiệm"),
   major: z.string().min(2, "Vui lòng không bỏ trống thông tin"),
+  apply: z.date(),
   cv_url: z
     .string()
     .url({ message: "Invalid URL format" })
