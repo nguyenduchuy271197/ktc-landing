@@ -75,9 +75,9 @@ const text = [
       <div>
         <p>
           Bộ Doanh nghiệp vừa và nhỏ và Khởi nghiệp Hàn Quốc (MSS - The Ministry
-          of SMEs and Startups) là một tổ chức chính phủ có mục tiêu là tăng
-          cường khả năng cạnh tranh và hỗ trợ đổi mới của các Doanh nghiệp vừa
-          và nhỏ (SME) và Doanh nghiệp siêu nhỏ (ME).
+          of SMEs and Startups) là một tổ chức chính phủ có mục tiêu tăng cường
+          khả năng cạnh tranh và hỗ trợ đổi mới của các Doanh nghiệp vừa và nhỏ
+          (SME) và Doanh nghiệp siêu nhỏ (ME).
         </p>
         <p>
           Sứ mệnh của MSS là phát triển và thực hiện các chính sách của chính
@@ -100,7 +100,7 @@ const text = [
         <p>
           <b>K-Tech College 2024</b> là chương trình đặc biệt, cung cấp cho các
           lập trình viên các{" "}
-          <b>kỹ năng cần thiết, hiểu rõ về văn hóa làm việc</b> tại Hàn Quốc và
+          <b>kỹ năng cần thiết, hiểu rõ về văn hóa làm việc</b> tại Hàn Quốc và{" "}
           <b>tạo điều kiện để bạn tìm được công việc mong muốn tại Hàn Quốc.</b>
         </p>
         <p>
